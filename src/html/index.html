@@ -1,15 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Стартовый шаблон</title>
-		<link rel="stylesheet" href="./css/main.css" />
-	</head>
-	<body>
-		@@include('blocks/header.html')
-		@@include('blocks/footer.html')
-		<script src="./js/index.bundle.js"></script>
-	</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автошкола</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- bootstrap v5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+
+    <section class="section header-offset section-first__block">
+      <div class="container">
+        <div class="first__block row">
+          <div class="col-md-6 col-12">
+            <div class="first__block-info">
+              <div class="text">
+                <ul>
+                  <li>Обучаем на все категории и любые виды техники</li>
+                  <li>Гарантируем неизменность цены в процессе обучения</li>
+                  <li>Научим безопасно водить за короткий срок</li>
+                </ul>
+              </div>
+              <div class="contact_form">
+                <span class="contact_form-title">
+                  Запишитесь сейчас и получите скидку <span>1 000 ₽</span>
+                </span>
+                <form class="contact_form-form">
+                  <div class="contact_form-form-input">
+                    <input type="tel" placeholder="+7 (___) ___ - __ - __" />
+                  </div>
+                  <button class="button">Оставить заявку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="first__block-slider">
+        <div class="swiper topSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/items/top-slider/1.png" alt="car-1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/items/top-slider/1.png" alt="car-1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/items/top-slider/1.png" alt="car-1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/items/top-slider/1.png" alt="car-1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Почему мы?</h2>
+        <div class="why-us-block">
+          <div>
+            <div>
+              <img src="img/items/why-us/1.svg" alt="" />
+            </div>
+            <span>Широкая сеть, более 20 филиалов рядом с вами</span>
+          </div>
+          <div>
+            <div>
+              <img src="img/items/why-us/2.svg" alt="" />
+            </div>
+            <span
+              >Возможность выбора способа изучения ПДД: очно или онлайн</span
+            >
+          </div>
+          <div>
+            <div>
+              <img src="img/items/why-us/3.svg" alt="" />
+            </div>
+            <span>Стабильный коллектив опытных инструкторов</span>
+          </div>
+          <div>
+            <div>
+              <img src="img/items/why-us/4.svg" alt="" />
+            </div>
+            <span
+              >Мы не меняем автомобиль или инструктора в процессе обучения без
+              желания ученика</span
+            >
+          </div>
+          <div>
+            <div>
+              <img src="img/items/why-us/5.svg" alt="" />
+            </div>
+            <span
+              >Все занятия по вождению проводятся на автомобиле, никаких
+              тренажеров</span
+            >
+          </div>
+          <div>
+            <div>
+              <img src="img/items/why-us/6.svg" alt="" />
+            </div>
+            <span>Беспроцентная рассрочка</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Измените жизнь за 2 месяца</h2>
+        <div class="life__grid">
+          <div class="item">
+            <div class="img">
+              <img src="img/items/life/1.svg" alt="" />
+            </div>
+            <span>Больше не нужно толпиться в тесном автобуесе</span>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="img/items/life/2.svg" alt="" />
+            </div>
+            <span
+              >Легко устроиться <br />
+              на работу</span
+            >
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="img/items/life/3.svg" alt="" />
+            </div>
+            <span>Комфортно возить ребенка в садик и школу</span>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="img/items/life/4.svg" alt="" />
+            </div>
+            <span>Можно путешествовать с красивым видом</span>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="img/items/life/5.svg" alt="" />
+            </div>
+            <span
+              >Проще помогать <br />
+              родителям</span
+            >
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="img/items/life/6.svg" alt="" />
+            </div>
+            <span>Не нужно переплачивать за такси в час-пик</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- @@include('blocks/footer.html') -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
 </html>

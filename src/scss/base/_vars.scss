@@ -1,17 +1,30 @@
 :root {
   --container-width: 1200px;
-  --container-padding: 15px;
 
-  --font-main: "Poppins", sans-serif;
-  --font-accent: "Playfair Display", serif;
+  --font-main: "Ubuntu", sans-serif;
+  --font-link: "Montserrat", sans-serif;
 
-  --page-bg: #fff;
-  --text-color: #000;
-  --accent: #ac182c;
-
+  --page-bg: #e5e5e5;
+  --accent-block: #ecf0f4;
+  --footer-bg: #131313;
+  --title-color: #202439;
+  --white: #fff;
+  --black: #000;
+  --light-gray: #f5f5f5;
+  --gray: #cccccc;
+  --yellow: #ffc700;
+  --accent: #00a0e3;
+  --accent-hov: #0688c0;
+  --btn-color-bg: linear-gradient(
+    180deg,
+    rgb(255, 236, 113),
+    rgb(255, 199, 0) 100%
+  );
+  --btn-color: #2b2b2b;
   --laptop-size: 1199px;
   --tablet-size: 959px;
   --mobile-size: 599px;
+  --time: 0.2s ease-in-out;
 }
 $vp-320: 320px;
 $vp-375: 375px;
