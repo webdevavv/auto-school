@@ -32,6 +32,8 @@ window.onload = () => {
   topSlider.style.height = `${sectionFirst.offsetHeight}px`;
 };
 
+// sliders
+
 var swiper = new Swiper(".topSlider", {
   slidesPerView: 1,
   loop: true,
@@ -39,5 +41,46 @@ var swiper = new Swiper(".topSlider", {
   autoplay: {
     delay: 4500,
     disableOnInteraction: false,
+  },
+});
+
+var swiper2 = new Swiper(".discount_slider", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  pagination: {
+    el: ".discount_slider-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1, spaceBetween: 20 },
+    600: { slidesPerView: 2, spaceBetween: 20 },
+    1024: { slidesPerView: 3, spaceBetween: 25 },
+  },
+});
+var swiper3 = new Swiper(".life__slider", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  pagination: {
+    el: ".life_slider-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1, spaceBetween: 20 },
+    600: { slidesPerView: 2, spaceBetween: 20 },
+    1024: { slidesPerView: 3, spaceBetween: 25 },
+  },
+});
+
+var swiper4 = new Swiper(".video_slider", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  pagination: {
+    el: ".video_slider-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    320: { slidesPerView: 1, spaceBetween: 20 },
+    600: { slidesPerView: 2, spaceBetween: 20 },
+    1024: { slidesPerView: 3, spaceBetween: 25 },
   },
 });
