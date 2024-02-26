@@ -362,7 +362,7 @@
     }
     > ul {
       height: 100%;
-      z-index: 99;
+      z-index: 99999;
       padding: 0;
       margin: 0;
       max-width: 320px;
@@ -378,7 +378,7 @@
     height: 100vh;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 999;
     transition: all 0.2s ease-in-out;
   }
   @include vp-1024 {

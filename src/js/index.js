@@ -19,9 +19,11 @@ $(function () {
   $("#hamburger").on("click", function () {
     $(this).toggleClass("close");
     $("#nav").toggleClass("visible");
+    $("#body").toggleClass("no-scroll");
     $("#core").on("click", function () {
       $("#hamburger").removeClass("close");
       $("#nav").removeClass("visible");
+      $("#body").removeClass("no-scroll");
     });
   });
 });

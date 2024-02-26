@@ -323,6 +323,7 @@ h2 {
 .ourplus {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 46px;
   &__title {
     display: flex;
@@ -335,6 +336,16 @@ h2 {
     height: 125px;
     padding: 20px 0;
     background-color: #fff;
+    @include vp-500 {
+      font-size: 20px;
+      height: 70px;
+      .desc-logo {
+        display: none;
+      }
+      .mob-logo {
+        display: block !important;
+      }
+    }
   }
   .minus {
     ul {
@@ -344,6 +355,11 @@ h2 {
           position: absolute;
           left: 18px;
           top: 18px;
+          @include vp-500 {
+            content: url("data:image/svg+xml,%3Csvg width='48.000000' height='48.000000' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3ClinearGradient id='paint_linear_877_23861_0' x1='24.000000' y1='0.000000' x2='24.000000' y2='48.000000' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF767A'/%3E%3Cstop offset='1.000000' stop-color='%23E31E24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle id='Ellipse 67' cx='24.000000' cy='24.000000' r='24.000000' fill='url(%23paint_linear_877_23861_0)' fill-opacity='1.000000'/%3E%3Cpath id='-' d='M20.0824 22.1189L27.9134 22.1189L27.9134 25.7642L20.0824 25.7642L20.0824 22.1189Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+            left: 10px;
+            top: 10px;
+          }
         }
       }
     }
@@ -356,16 +372,26 @@ h2 {
           position: absolute;
           left: 18px;
           top: 18px;
+          @include vp-500 {
+            content: url("data:image/svg+xml,%3Csvg width='48.000000' height='48.000000' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3ClinearGradient id='paint_linear_877_23892_0' x1='24.000000' y1='0.000000' x2='24.000000' y2='48.000000' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232FF07C'/%3E%3Cstop offset='1.000000' stop-color='%232CAC5F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle id='Ellipse 67' cx='24.000000' cy='24.000000' r='24.000000' fill='url(%23paint_linear_877_23892_0)' fill-opacity='1.000000'/%3E%3Cpath id='-' d='M20.0824 22.1189L27.9134 22.1189L27.9134 25.7642L20.0824 25.7642L20.0824 22.1189Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+            left: 10px;
+            top: 10px;
+          }
         }
       }
     }
   }
   &__list {
     flex-basis: calc(50% - 23px);
+    min-width: 470px;
     border-radius: 10px;
+    justify-content: center;
     box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.1);
     background-color: #ecf0f4;
-
+    @include vp-500 {
+      min-width: 100%;
+      flex-basis: 100%;
+    }
     ul {
       margin: 0;
       padding: 0;
@@ -393,6 +419,15 @@ h2 {
         &:nth-child(4) {
           height: 110px;
         }
+        @include vp-500 {
+          font-size: 14px;
+          padding-top: 13px;
+          padding-bottom: 13px;
+          padding-right: 20px;
+          padding-left: 70px;
+          min-height: 75px;
+          height: 100% !important;
+        }
       }
     }
   }
@@ -411,6 +446,21 @@ h2 {
   padding-right: 170px;
   border-radius: 10px;
   box-shadow: 0px 13px 23.4px 0px rgba(0, 0, 0, 0.15);
+  @include vp-1024 {
+    justify-content: start;
+    padding-left: 30px;
+  }
+  @include vp-768 {
+    background-image: none;
+    background-color: var(--accent);
+    padding: 20px;
+    .banner-form {
+      flex-direction: column;
+      .banner-form-input {
+        flex-basis: 46px;
+      }
+    }
+  }
   &__info {
     position: relative;
     display: flex;
@@ -425,12 +475,38 @@ h2 {
       letter-spacing: 0%;
       text-align: left;
       color: #fff;
+      @include vp-1400 {
+        font-size: 28px;
+      }
+      @include vp-1280 {
+        font-size: 24px;
+      }
     }
     &::before {
       content: url("../img/doc.png");
       position: absolute;
       left: -85%;
       top: -66%;
+      @include vp-1400 {
+        left: -100%;
+      }
+      @include vp-1024 {
+        display: none;
+      }
+    }
+    @include vp-1024 {
+      flex-basis: 100%;
+      .img {
+        display: block !important;
+        max-height: 150px;
+        max-width: 140px;
+      }
+    }
+    @include vp-768 {
+      gap: 20px;
+      span {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -438,7 +514,7 @@ h2 {
 .about-autoshcool {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+
   .text {
     flex-basis: calc(55% - 15px);
     display: flex;
@@ -462,6 +538,24 @@ h2 {
     border-radius: 10px;
     background: rgb(43, 43, 43);
   }
+  @include vp-1024 {
+    .video {
+      display: none;
+    }
+    .video-mob {
+      display: block !important;
+      min-height: 260px;
+    }
+    .text {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.banner-clear-wrapper {
+  @include vp-768 {
+    margin-top: 50px !important;
+  }
 }
 
 .banner-clear {
@@ -476,6 +570,26 @@ h2 {
     position: absolute;
     right: 5%;
     bottom: -6px;
+    @include vp-1280 {
+      content: url("../img/telephone-mob.svg");
+    }
+    @include vp-1024 {
+      display: none;
+    }
+  }
+  @include vp-1024 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 0;
+    .img {
+      display: block !important;
+      max-width: 280px;
+    }
+  }
+  @include vp-500 {
+    padding: 30px 20px;
+    padding-bottom: 0;
   }
   .info {
     flex-basis: 50%;
@@ -488,6 +602,10 @@ h2 {
       line-height: 46px;
       letter-spacing: 0%;
       color: #fff;
+      @include vp-768 {
+        font-size: 20px;
+        line-height: 23px;
+      }
     }
     p {
       font-family: var(--font-link);
@@ -497,6 +615,25 @@ h2 {
       letter-spacing: 0%;
       color: #fff;
       margin-bottom: 15px;
+      @include vp-768 {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    @include vp-1280 {
+      flex-basis: 70%;
+    }
+    @include vp-768 {
+      gap: 15px;
+    }
+    @include vp-500 {
+      .banner-form {
+        flex-direction: column;
+        margin-top: 0;
+        &-input {
+          flex-basis: 40px;
+        }
+      }
     }
   }
 }
