@@ -320,6 +320,237 @@ h2 {
   }
 }
 
+.cost__block {
+  position: relative;
+  overflow-x: hidden;
+  &::before {
+    content: url("../img/znak-left.png");
+    position: absolute;
+    left: -130px;
+    top: 60px;
+    z-index: 1;
+    @include vp-1024 {
+      display: none;
+    }
+  }
+  &::after {
+    content: url("../img/znak-right.png");
+    position: absolute;
+    right: -130px;
+    top: 0;
+    z-index: 1;
+    @include vp-1024 {
+      display: none;
+    }
+  }
+}
+
+.filter {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
+  max-width: 810px;
+  width: 100%;
+  .custom_select {
+    flex-basis: calc(50% - 15px);
+    span {
+      display: block;
+      margin-bottom: 11px;
+    }
+    @include vp-840 {
+      flex-basis: 100%;
+    }
+  }
+}
+.turquoise {
+  background: #ebf8f7;
+}
+.blue {
+  background: #ceebff;
+}
+.purple {
+  background: #ced9ff;
+}
+.cost__grid {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  column-gap: 12px;
+  row-gap: 20px;
+  @include vp-840 {
+    display: none;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 16px;
+    &__content {
+      flex: 1;
+    }
+    .line {
+      margin: 20px 0;
+      background: #005274;
+      opacity: 0.2;
+      height: 1px;
+      width: calc(100% + 32px);
+      margin-left: -16px;
+    }
+    .subtitle {
+      display: block;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      color: var(--title-color);
+    }
+    .text {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 15px;
+      letter-spacing: 0%;
+      color: var(--title-color);
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: var(--title-color);
+    }
+    .price {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      &-number {
+        display: flex;
+        align-items: flex-end;
+        .discount-price {
+          font-size: 30px;
+          font-weight: 500;
+          line-height: 34px;
+          letter-spacing: 0%;
+          color: var(--accent);
+        }
+        .old-price {
+          font-size: 13px;
+          font-weight: 300;
+          line-height: 15px;
+          letter-spacing: 0%;
+          text-decoration-line: line-through;
+          color: var(--title-color);
+        }
+        .discount-current {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23px;
+          letter-spacing: 0%;
+          color: #fff;
+          display: block;
+          margin-left: 5px;
+          padding: 2px 10px;
+          border-radius: 90px;
+          background: rgb(228, 69, 108);
+        }
+      }
+      .custom_select {
+        .text {
+          margin-bottom: 15px;
+          display: block;
+        }
+      }
+    }
+    .time {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .more_info {
+      ol {
+        margin-top: 15px;
+        counter-reset: myCounter;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        padding-left: 0;
+        li {
+          position: relative;
+          list-style: none;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0%;
+          color: var(--title-color);
+          padding-left: 36px;
+          &::before {
+            position: absolute;
+            left: 0;
+            top: -5px;
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            background: var(--accent);
+            padding: 5px 9px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.cost__mob {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  .cost__button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: var(--title-color);
+    }
+    .button {
+      flex-basis: 150px;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0%;
+        color: var(--title-color);
+      }
+    }
+  }
+  @include vp-840 {
+    display: flex;
+  }
+}
+
 .ourplus {
   display: flex;
   flex-wrap: wrap;
@@ -689,6 +920,32 @@ h2 {
   }
 }
 
+.choose-us {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  row-gap: 35px;
+  column-gap: 40px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    > div {
+      max-width: 90px;
+      span {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+        letter-spacing: 0%;
+        color: #000;
+      }
+    }
+  }
+  @include vp-500 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 .video_slider {
   margin-bottom: 30px;
   .swiper-slide {
@@ -696,6 +953,41 @@ h2 {
     overflow: hidden;
     .img {
       position: relative;
+    }
+  }
+}
+
+.news_slider {
+  margin-bottom: 30px;
+  .swiper-slide {
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h5 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+      color: var(--title-color);
+      margin: 0;
+    }
+    .date {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 15px;
+      color: #565656;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 18px;
+      color: #000;
+    }
+    .news-btn {
+      max-width: 185px;
     }
   }
 }

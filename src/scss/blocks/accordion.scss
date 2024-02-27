@@ -1,0 +1,41 @@
+.panel {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.panel-heading {
+  margin-top: 5px;
+}
+.panel-heading span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: 0.3s;
+  span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: var(--title-color);
+  }
+}
+.panel-heading span i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: rotate 0.2s ease-in-out;
+}
+.panel-heading.in span i {
+  rotate: (180deg);
+}
+
+.panel-collapse {
+  display: none;
+  padding-top: 25px;
+}
+.panel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

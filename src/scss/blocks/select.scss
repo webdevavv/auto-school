@@ -1,0 +1,73 @@
+.select {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.new-select {
+  position: relative;
+  padding: 17px 20px;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(157, 157, 157, 0.9);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #202439;
+  &::after {
+    content: url("data:image/svg+xml,%3Csvg width='16.000000' height='16.000000' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip877_12315'%3E%3Crect id='down-arrow (17) 1' width='16.000000' height='16.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect id='down-arrow (17) 1' width='16.000000' height='16.000000' fill='%23FFFFFF' fill-opacity='0'/%3E%3Cg clip-path='url(%23clip877_12315)'%3E%3Cpath id='Down_Arrow_3_' d='M7.5 11C7.375 11 7.24219 10.9512 7.14844 10.8535L2.14844 5.85352C1.95312 5.6582 1.95312 5.3418 2.14844 5.14648C2.34375 4.95117 2.65625 4.95117 2.85156 5.14648L7.5 9.79297L12.1484 5.14648C12.3438 4.95117 12.6562 4.95117 12.8516 5.14648C13.0469 5.3418 13.0469 5.6582 12.8516 5.85352L7.85156 10.8535C7.75781 10.9512 7.625 11 7.5 11Z' fill='%23000000' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 0.6;
+
+    -webkit-transition: all 0.27s ease-in-out;
+    -o-transition: all 0.27s ease-in-out;
+    transition: all 0.27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.new-select.on:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.new-select__list {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border: 1px solid rgba(157, 157, 157, 0.9);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  user-select: none;
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 15px;
+  transition: color var(--time);
+}
+
+.new-select__item span:hover {
+  color: var(--yellow);
+}
