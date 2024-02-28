@@ -72,6 +72,13 @@ img {
 
 .section {
   margin-top: 80px;
+  @include vp-768 {
+    margin-top: 40px;
+  }
+}
+.dark-bg {
+  background-color: #ecf0f4;
+  padding: 55px 0;
 }
 .header-offset {
   margin-top: 0;
@@ -513,6 +520,48 @@ h2 {
   display: none;
   flex-direction: column;
   gap: 10px;
+  .panel {
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .panel-heading {
+    margin-top: 5px;
+  }
+  .panel-heading span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    span {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0%;
+      color: var(--title-color);
+    }
+  }
+  .panel-heading span i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: rotate 0.2s ease-in-out;
+  }
+  .panel-heading.in span i {
+    rotate: (180deg);
+  }
+
+  .panel-collapse {
+    display: none;
+    padding-top: 25px;
+  }
+  .panel-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
   .cost__button {
     margin-top: 20px;
     display: flex;
@@ -741,6 +790,40 @@ h2 {
     }
   }
 }
+.banner2 {
+  .banner__info {
+    flex-basis: 55%;
+    @include vp-1024 {
+      flex-basis: 100%;
+    }
+    @include vp-768 {
+      gap: 0;
+    }
+    .banner__info-title {
+      @include vp-1024 {
+        display: flex;
+        gap: 10px;
+        .img {
+          min-width: 70px;
+        }
+        span {
+          line-height: 30px;
+          font-size: 20px;
+        }
+      }
+    }
+    span {
+      font-size: 55px;
+      letter-spacing: normal;
+      line-height: 56px;
+    }
+    &::before {
+      content: url("../img/znak-banner.png");
+      top: -30%;
+      left: -70%;
+    }
+  }
+}
 
 .about-autoshcool {
   display: flex;
@@ -920,6 +1003,64 @@ h2 {
   }
 }
 
+.autopark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  .info {
+    max-width: 390px;
+    h2 {
+      max-width: 80%;
+      margin-bottom: 20px !important;
+    }
+    &__text {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 25px;
+      color: #000;
+      margin: 0;
+    }
+    .link {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 25px;
+      color: #000;
+      margin-top: 20px;
+      display: block;
+    }
+    &__button {
+      max-width: 250px;
+      margin-top: 20px;
+    }
+  }
+  @include vp-840 {
+    .img {
+      display: none;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      h2 {
+        max-width: 100%;
+        margin-bottom: 0 !important;
+      }
+      &__button {
+        margin-top: 0;
+      }
+      .link {
+        margin-top: 0;
+      }
+      .img-mob {
+        max-width: 400px;
+        display: block !important;
+      }
+    }
+  }
+}
+
 .choose-us {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -953,6 +1094,235 @@ h2 {
     overflow: hidden;
     .img {
       position: relative;
+    }
+  }
+}
+
+.banner-qr {
+  position: relative;
+  background-image: url("../img/banner-qr.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 200px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 13px 23.4px 0px rgba(0, 0, 0, 0.15);
+  &::before {
+    content: url("../img/reach-man.svg");
+    position: absolute;
+    left: -7%;
+    top: -10%;
+  }
+  .img {
+    display: none;
+  }
+  .qr {
+    position: absolute;
+    right: 30px;
+    top: -40px;
+    background: var(--btn-color-bg);
+    padding: 29px 43px;
+    border-radius: 5px;
+  }
+  .info {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    &__button {
+      display: none;
+    }
+    &__title {
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 63px;
+      color: #fff;
+    }
+    &__text {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 46px;
+      color: #fff;
+    }
+  }
+  @include vp-1024 {
+    background-image: none;
+    background-color: var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px;
+    &::before {
+      display: none;
+    }
+    .qr {
+      display: none;
+    }
+    .img {
+      display: block;
+    }
+
+    .info {
+      &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 23px;
+      }
+      &__text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      &__button {
+        display: block;
+        max-width: 300px;
+      }
+    }
+  }
+  @include vp-768 {
+    .info {
+      max-width: 146px;
+      &__title {
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.accordion__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .panel {
+    border-radius: 10px;
+    box-shadow: 0px 4px 28.5px 0px rgba(0, 0, 0, 0.07);
+    background: rgb(255, 255, 255);
+  }
+
+  .panel-heading {
+    padding: 20px 40px;
+    @include vp-500 {
+      padding: 20px;
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+  }
+  .panel-heading span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    transition: 0.3s;
+    span {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      color: #000;
+    }
+  }
+  .panel-heading span i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: rotate 0.2s ease-in-out;
+  }
+  .panel-heading.in span i {
+    rotate: (180deg);
+  }
+
+  .panel-collapse {
+    display: none;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    @include vp-500 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.discount-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  background-color: var(--accent);
+  border-radius: 10px;
+  box-shadow: 0px 13px 23.4px 0px rgba(0, 0, 0, 0.15);
+  padding: 13px 0;
+  padding-right: 95px;
+  @include vp-1024 {
+    padding: 30px 20px !important;
+  }
+  @include vp-840 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .img {
+    @include vp-1024 {
+      display: none;
+    }
+  }
+  .img-mob {
+    display: none;
+    @include vp-1024 {
+      display: block;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+  &__info {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 25px;
+    @include vp-840 {
+      padding: 0;
+      gap: 10px;
+    }
+    @include vp-500 {
+      form {
+        flex-direction: column;
+        .banner-form-input {
+          flex-basis: 40px;
+        }
+      }
+    }
+  }
+  &-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    color: #fff;
+    @include vp-768 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23px;
+    }
+  }
+  &-subtitle {
+    font-family: var(--font-link);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #fff;
+    @include vp-768 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
     }
   }
 }
