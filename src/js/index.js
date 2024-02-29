@@ -34,6 +34,10 @@ window.onload = () => {
   topSlider.style.height = `${sectionFirst.offsetHeight}px`;
 };
 
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Your custom options for a specific gallery
+});
+
 // select
 $(".select").each(function () {
   const _this = $(this),
