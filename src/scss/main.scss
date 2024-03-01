@@ -796,7 +796,7 @@ h2 {
           content: url("data:image/svg+xml,%3Csvg width='48.000000' height='48.000000' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3ClinearGradient id='paint_linear_877_12949_0' x1='24.000000' y1='0.000000' x2='24.000000' y2='48.000000' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF767A'/%3E%3Cstop offset='1.000000' stop-color='%23E31E24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle id='Ellipse 67' cx='24.000000' cy='24.000000' r='24.000000' fill='url(%23paint_linear_877_12949_0)' fill-opacity='1.000000'/%3E%3Cpath id='-' d='M20.0824 22.1189L27.9134 22.1189L27.9134 25.7642L20.0824 25.7642L20.0824 22.1189Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
           position: absolute;
           left: 18px;
-          top: 18px;
+          top: 26px;
           @include vp-500 {
             content: url("data:image/svg+xml,%3Csvg width='48.000000' height='48.000000' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3ClinearGradient id='paint_linear_877_23861_0' x1='24.000000' y1='0.000000' x2='24.000000' y2='48.000000' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF767A'/%3E%3Cstop offset='1.000000' stop-color='%23E31E24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle id='Ellipse 67' cx='24.000000' cy='24.000000' r='24.000000' fill='url(%23paint_linear_877_23861_0)' fill-opacity='1.000000'/%3E%3Cpath id='-' d='M20.0824 22.1189L27.9134 22.1189L27.9134 25.7642L20.0824 25.7642L20.0824 22.1189Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
             left: 10px;
@@ -813,7 +813,7 @@ h2 {
           content: url("data:image/svg+xml,%3Csvg width='48.000000' height='48.000000' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3ClinearGradient id='paint_linear_877_12923_0' x1='24.000000' y1='0.000000' x2='24.000000' y2='48.000000' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232FF07C'/%3E%3Cstop offset='1.000000' stop-color='%232CAC5F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle id='Ellipse 65' cx='24.000000' cy='24.000000' r='24.000000' fill='url(%23paint_linear_877_12923_0)' fill-opacity='1.000000'/%3E%3Cpath id='+' d='M17.657 22.2507L22.1657 22.2507L22.1657 17.2607L25.8374 17.2607L25.8374 22.2507L30.3462 22.2507L30.3462 25.6257L25.8374 25.6257L25.8374 30.6223L22.1657 30.6223L22.1657 25.6257L17.657 25.6257L17.657 22.2507Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
           position: absolute;
           left: 18px;
-          top: 18px;
+          top: 26px;
           @include vp-500 {
             content: url("data:image/svg+xml,%3Csvg width='48.000000' height='48.000000' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3ClinearGradient id='paint_linear_877_23892_0' x1='24.000000' y1='0.000000' x2='24.000000' y2='48.000000' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232FF07C'/%3E%3Cstop offset='1.000000' stop-color='%232CAC5F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle id='Ellipse 67' cx='24.000000' cy='24.000000' r='24.000000' fill='url(%23paint_linear_877_23892_0)' fill-opacity='1.000000'/%3E%3Cpath id='-' d='M20.0824 22.1189L27.9134 22.1189L27.9134 25.7642L20.0824 25.7642L20.0824 22.1189Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
             left: 10px;
@@ -1341,6 +1341,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+  .img {
+    max-width: 637px;
+    min-height: 370px;
+  }
   .info {
     max-width: 390px;
     h2 {
@@ -1562,6 +1566,19 @@ h2 {
   }
 }
 
+.accordion-wrapper {
+  background-image: url("../img/acc-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 96px;
+  margin-bottom: -96px;
+  @include vp-840 {
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
 .accordion__block {
   display: flex;
   flex-direction: column;
@@ -1576,11 +1593,6 @@ h2 {
     padding: 20px 40px;
     @include vp-500 {
       padding: 20px;
-      span {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 30px;
-      }
     }
   }
   .panel-heading span {
@@ -1595,6 +1607,9 @@ h2 {
       font-weight: 400;
       line-height: 30px;
       color: #000;
+      @include vp-500 {
+        font-size: 14px;
+      }
     }
   }
   .panel-heading span i {
@@ -1683,7 +1698,7 @@ h2 {
   &-subtitle {
     font-family: var(--font-link);
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 35px;
     color: #fff;
     @include vp-768 {

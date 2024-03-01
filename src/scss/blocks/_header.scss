@@ -360,18 +360,202 @@
       height: 100vh;
       width: 100vw;
     }
-    > ul {
-      height: 100%;
-      z-index: 99999;
-      padding: 0;
-      margin: 0;
+    &-content {
+      position: relative;
+      z-index: 999;
+      height: 100vh;
+      overflow-y: auto;
       max-width: 320px;
       width: 100%;
-      overflow-x: auto;
-
-      background-color: #202439;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       padding: 20px 15px;
+      background-color: #202439;
+      .choose__region {
+        position: relative;
+        padding-left: 22px;
+        padding-right: 22px;
+        span {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        &::before {
+          content: url("data:image/svg+xml,%3Csvg width='12.750000' height='17.000000' viewBox='0 0 12.75 17' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs/%3E%3Cpath id='Vector' d='M6.375 0C4.6875 0.00219727 3.0625 0.674561 1.86719 1.86963C0.671875 3.0647 0 4.68494 0 6.375C0 10.9517 5.9375 16.684 6.19531 16.9257C6.24219 16.9734 6.30469 17 6.375 17C6.44531 17 6.50781 16.9734 6.55469 16.9257C6.8125 16.684 12.75 10.9517 12.75 6.375C12.75 4.68494 12.0781 3.0647 10.8828 1.86963C9.6875 0.674561 8.0625 0.00219727 6.375 0ZM6.375 9.29688C5.79688 9.29688 5.23438 9.12549 4.75 8.80444C4.27344 8.4834 3.89844 8.0271 3.67188 7.49316C3.45312 6.95923 3.39844 6.3717 3.50781 5.80493C3.625 5.23816 3.89844 4.71753 4.3125 4.30896C4.71875 3.90027 5.23438 3.62195 5.80469 3.50928C6.375 3.39648 6.96094 3.45435 7.49219 3.67554C8.02344 3.89673 8.48438 4.27124 8.80469 4.75171C9.125 5.23218 9.29688 5.79712 9.29688 6.375C9.29688 7.14978 8.99219 7.8927 8.4375 8.44055C7.89062 8.9884 7.14844 9.29639 6.375 9.29688Z' fill='%23009FE3' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/svg%3E%0A");
+          position: absolute;
+          left: 0;
+          top: 2px;
+        }
+        &::after {
+          content: url("data:image/svg+xml,%3Csvg width='14.000000' height='14.000000' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip877_13505'%3E%3Crect id='down-arrow (15) 1' width='14.000000' height='14.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect id='down-arrow (15) 1' width='14.000000' height='14.000000' fill='%23FFFFFF' fill-opacity='0'/%3E%3Cg clip-path='url(%23clip877_13505)'%3E%3Cpath id='Down_Arrow_3_' d='M7 9.625C6.89062 9.625 6.77344 9.58203 6.6875 9.49609L2.3125 5.12109C2.14844 4.95117 2.14844 4.67383 2.3125 4.50391C2.48438 4.33203 2.76562 4.33203 2.9375 4.50391L7 8.56836L11.0625 4.50391C11.2344 4.33203 11.5156 4.33203 11.6875 4.50391C11.8516 4.67383 11.8516 4.95117 11.6875 5.12109L7.3125 9.49609C7.22656 9.58203 7.10938 9.625 7 9.625Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+          position: absolute;
+          right: 0;
+          top: 2px;
+        }
+      }
+      .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          color: #fff;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        &__links {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+      .info-tel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tel-block {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .info-title {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 12.64px;
+            padding-left: 22px;
+            position: relative;
+            &::before {
+              content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_877_25200)'%3E%3Cpath d='M0.327497 5.0904C0.115498 4.51776 -0.0380183 3.93294 0.00828029 3.31157C0.0375215 2.92899 0.181291 2.60247 0.461519 2.33442C0.766115 2.04688 1.05365 1.74472 1.35338 1.45231C1.74326 1.0673 2.23305 1.06974 2.62293 1.45231C2.86417 1.68868 3.10297 1.92992 3.34178 2.17116C3.57327 2.40265 3.8072 2.63414 4.03869 2.86807C4.44563 3.27989 4.44807 3.75993 4.04113 4.16931C3.74872 4.46172 3.45874 4.75657 3.16146 5.04411C3.08348 5.11965 3.07617 5.183 3.11759 5.27804C3.31254 5.74589 3.5952 6.16258 3.91198 6.55246C4.55041 7.3371 5.2717 8.03402 6.13187 8.57254C6.31707 8.68707 6.51932 8.77236 6.71182 8.87714C6.81173 8.93075 6.87752 8.91369 6.95794 8.83084C7.24791 8.53112 7.5452 8.23627 7.84248 7.94142C8.23237 7.55641 8.71972 7.55398 9.1096 7.94142C9.58721 8.41415 10.0624 8.88932 10.5351 9.36693C10.9323 9.76656 10.9299 10.2563 10.5302 10.6584C10.2598 10.9313 9.97465 11.1896 9.72123 11.4747C9.35084 11.889 8.88298 12.0254 8.35177 11.9962C7.57688 11.9548 6.8629 11.6965 6.1733 11.3626C4.64301 10.6194 3.3369 9.58868 2.24279 8.28744C1.43379 7.32248 0.766115 6.27467 0.327497 5.0904ZM11.9996 5.96277C11.9996 2.67557 9.32404 0 6.03684 0V1.13553C8.69779 1.13553 10.8641 3.30182 10.8641 5.96277H11.9996ZM8.73434 5.96277H9.86987C9.86987 3.85009 8.14952 2.12973 6.03684 2.12973V3.26527C6.75812 3.26527 7.43554 3.54549 7.94483 4.05478C8.45411 4.56406 8.73434 5.24148 8.73434 5.96277Z' fill='%23009FE3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_877_25200'%3E%3Crect width='12' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+          }
+          .info-text {
+            color: #fff;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 19.5px;
+          }
+        }
+        .social__links {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+      .header__nav-list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        > li {
+          > a {
+            color: #fff;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18.38px;
+          }
+        }
+        .dropdown {
+          > a {
+            position: relative;
+            padding-right: 22px;
+            transition: color var(--time);
+            display: block;
+            width: 100%;
+            &::after {
+              content: url("data:image/svg+xml,%3Csvg width='12.000000' height='12.000000' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip877_23519'%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='%23FFFFFF' fill-opacity='0'/%3E%3Cg clip-path='url(%23clip877_23519)'%3E%3Cpath id='Down_Arrow_3_' d='M6 8.25C5.90625 8.25 5.80469 8.21338 5.73438 8.14014L1.98438 4.39014C1.83594 4.24365 1.83594 4.00635 1.98438 3.85986C2.13281 3.7135 2.36719 3.71338 2.51562 3.85986L6 7.34473L9.48438 3.85986C9.63281 3.71338 9.86719 3.71338 10.0156 3.85986C10.1641 4.00647 10.1641 4.24365 10.0156 4.39014L6.26562 8.14014C6.19531 8.21338 6.09375 8.25 6 8.25Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+              position: absolute;
+              right: 0;
+              top: 2px;
+            }
+          }
+
+          ul {
+            display: none;
+            position: absolute;
+            top: 66px;
+            left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+            min-width: 200px;
+            max-width: 400px;
+            border-radius: 0px 0px 15px 15px;
+            background: rgb(45, 50, 75);
+            padding: 20px 15px;
+            margin-left: -15px;
+            z-index: 9;
+            > li {
+              width: 100%;
+              display: block;
+              border-bottom: 1px solid #202439;
+              &:nth-last-child(1) {
+                border-bottom: 0;
+              }
+              &:active {
+                a {
+                  color: var(--accent);
+                }
+              }
+              a {
+                transition: color var(--time);
+                display: block;
+                padding: 10px 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0%;
+                text-align: left;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .send_feedback {
+        a {
+          padding-left: 22px;
+          position: relative;
+          &::before {
+            content: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_877_25195)'%3E%3Cpath d='M4.22924 0.531006C2.18964 0.531006 0.54286 2.18547 0.539543 4.22848L0.531255 9.33865C0.528042 11.2915 2.04158 12.8716 3.95481 13.0102V16.2029C3.95473 16.2555 3.97028 16.307 3.99949 16.3508C4.02871 16.3945 4.07027 16.4286 4.1189 16.4488C4.16754 16.4689 4.22105 16.4741 4.27265 16.4638C4.32426 16.4534 4.37163 16.428 4.40876 16.3907L7.75449 13.0367H12.7796C14.8192 13.0367 16.4688 11.3826 16.4688 9.33917V4.22901C16.4687 2.18629 14.8275 0.531006 12.7879 0.531006H4.22924ZM5.84426 5.98773C6.28121 5.98773 6.64062 6.34769 6.64062 6.78461C6.64061 7.22152 6.2812 7.58148 5.84426 7.58148C5.40732 7.58148 5.04739 7.22152 5.04738 6.78461C5.04738 6.34769 5.40731 5.98773 5.84426 5.98773ZM8.49999 5.98773C8.93694 5.98773 9.29687 6.34769 9.29687 6.78461C9.29686 7.22152 8.93693 7.58148 8.49999 7.58148C8.06305 7.58148 7.70312 7.22152 7.70312 6.78461C7.70311 6.34769 8.06304 5.98773 8.49999 5.98773ZM11.1568 5.98773C11.5937 5.98773 11.9536 6.34769 11.9536 6.78461C11.9536 7.22152 11.5937 7.58148 11.1568 7.58148C10.7198 7.58148 10.3594 7.22152 10.3594 6.78461C10.3594 6.34769 10.7198 5.98773 11.1568 5.98773Z' fill='%23009FE3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_877_25195'%3E%3Crect width='17' height='17' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+      .feedback-block {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .info-title {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 12.64px;
+          padding-left: 22px;
+          position: relative;
+          &::before {
+            content: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_877_25147)'%3E%3Cpath d='M6 0C2.69147 0 0 2.69147 0 6C0 9.30853 2.69147 12 6 12C9.30853 12 12 9.30853 12 6C12 2.69147 9.30853 0 6 0ZM8.85352 9.10345C8.75601 9.20096 8.62802 9.25003 8.50003 9.25003C8.37204 9.25003 8.24396 9.20096 8.14655 9.10345L5.64651 6.60352C5.55249 6.51004 5.50003 6.38297 5.50003 6.25003V3C5.50003 2.72351 5.72397 2.50003 6 2.50003C6.27603 2.50003 6.49997 2.72351 6.49997 3V6.04303L8.85352 8.39648C9.04898 8.59204 9.04898 8.90799 8.85352 9.10345Z' fill='%23009FE3'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_877_25147'%3E%3Crect width='12' height='12' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        .info-text {
+          color: #fff;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 19.5px;
+        }
+      }
     }
+
     justify-content: end;
     position: absolute;
     width: 100%;
