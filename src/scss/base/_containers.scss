@@ -1,5 +1,5 @@
 .container {
-  max-width: var(--container-width);
+  max-width: var(--container-width) !important;
   margin: 0 auto;
   @include vp-1280 {
     max-width: 100% !important;

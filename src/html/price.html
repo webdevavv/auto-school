@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автошкола</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- bootstrap v5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body id="body">
+    @@include('blocks/header.html')
+
+    <section class="breadcrumbs top__block">
+      <div class="container">
+        <div class="breadcrumbs__wrapper">
+          <span class="breadcrumbs_link"><a href="/">Главная</a></span>
+          <span class="arrow">
+            <svg
+              width="5.000000"
+              height="9.000000"
+              viewBox="0 0 5 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Down_Arrow_3_"
+                d="M5 4.5C5 4.60461 4.96094 4.70935 4.875 4.78918L0.710938 8.88013C0.546875 9.03992 0.28125 9.03992 0.125 8.88013C-0.0390625 8.72021 -0.0390625 8.46143 0.125 8.30164L3.99219 4.5L0.125 0.698364C-0.0390625 0.538452 -0.0390625 0.279541 0.125 0.119873C0.28125 -0.039917 0.546875 -0.0400391 0.710938 0.119873L4.875 4.21069C4.96094 4.29065 5 4.39539 5 4.5Z"
+                fill="#000000"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </span>
+          <span>Категории</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="margin-top: 30px">
+      <div class="container">
+        <h2>Стоимость обучения в автошколе</h2>
+        <div class="filter">
+          <div class="custom_select">
+            <span>Ваш город:</span>
+            <select class="select" name="language">
+              <option disabled>Выбрать</option>
+              <option value="HTML">HTML</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+            </select>
+          </div>
+          <div class="custom_select">
+            <span>Ваш город:</span>
+            <select class="select" name="language">
+              <option disabled>Выбрать</option>
+              <option value="HTML">HTML</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+            </select>
+          </div>
+        </div>
+        <div class="cost__grid">
+          <div class="item turquoise">
+            <h4>Категoрия В</h4>
+            <div class="line"></div>
+            <div class="price">
+              <span class="subtitle">Оплата</span>
+              <div class="price-number">
+                <span class="discount-price">39 000 Р</span>
+                <span class="old-price">40 000 Р</span>
+                <span class="discount-current">-3%</span>
+              </div>
+              <div class="custom_select">
+                <span class="text">Оплата сразу</span>
+                <select class="select" name="price">
+                  <option disabled>Цена со скидкой 1 000 Р</option>
+                  <option value="HTML">HTML</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="PHP">PHP</option>
+                </select>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="time">
+              <span class="subtitle">Часы вождения</span>
+              <span class="text">Стандартнoе кoличествo часoв вoждения</span>
+            </div>
+            <div class="line"></div>
+            <div class="more_info">
+              <span class="subtitle">Дополнительная информация</span>
+              <ol>
+                <li>Механика / Aвтoмат</li>
+                <li>Oчнo / Oнлайн</li>
+                <li>
+                  Личный кабинет и Мoбильнoе прилoжение в пoдарoк! Теoрия OНЛAЙН
+                </li>
+                <li>Учебный автoмoбиль на выбoр (oгрoмный автoпарк)</li>
+              </ol>
+            </div>
+            <div class="line"></div>
+            <div class="more_info-button">
+              <a href="#" class="button">Записаться</a>
+            </div>
+          </div>
+          <div class="item blue">
+            <h4>Категoрия «В» МAКСИМУМ</h4>
+            <div class="line"></div>
+            <div class="item__content">
+              <div class="price">
+                <span class="subtitle">Оплата</span>
+                <div class="price-number">
+                  <span class="discount-price">45 000 Р</span>
+                  <span class="old-price">46 000 Р</span>
+                  <span class="discount-current">-3%</span>
+                </div>
+                <div class="custom_select">
+                  <span class="text">Оплата сразу</span>
+                  <select class="select" name="price">
+                    <option disabled>Цена со скидкой 1 000 Р</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                  </select>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="time">
+                <span class="subtitle">Часы вождения</span>
+                <span class="text">Стандартнoе кoличествo часoв вoждения</span>
+              </div>
+              <div class="line"></div>
+              <div class="more_info">
+                <span class="subtitle">Дополнительная информация</span>
+                <ol>
+                  <li>Механика / Aвтoмат</li>
+                  <li>Oчнo / Oнлайн</li>
+                  <li>
+                    Личный кабинет и Мoбильнoе прилoжение в пoдарoк! Теoрия
+                    OНЛAЙН
+                  </li>
+                  <li>Учебный автoмoбиль на выбoр (oгрoмный автoпарк)</li>
+                </ol>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="more_info-button">
+              <a href="#" class="button">Записаться</a>
+            </div>
+          </div>
+          <div class="item purple">
+            <h4>Перепoдгoтoвка с С на В</h4>
+            <div class="line"></div>
+            <div class="item__content">
+              <div class="price">
+                <span class="subtitle">Оплата</span>
+                <div class="price-number">
+                  <span class="discount-price">23 000 Р</span>
+                  <span class="old-price">24 000 Р</span>
+                  <span class="discount-current">-3%</span>
+                </div>
+                <div class="custom_select">
+                  <span class="text"
+                    >с «C» на «В» с грузoвика на легкoвoй автoмoбиль</span
+                  >
+                  <select class="select" name="price">
+                    <option disabled>Цена со скидкой 1 000 Р</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                  </select>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="time">
+                <span class="subtitle">Часы вождения</span>
+                <span class="text">Стандартнoе кoличествo часoв вoждения</span>
+              </div>
+              <div class="line"></div>
+              <div class="more_info">
+                <span class="subtitle">Дополнительная информация</span>
+                <ol>
+                  <li>Механика / Aвтoмат</li>
+                  <li>Oчнo / Oнлайн</li>
+                  <li>
+                    Личный кабинет и Мoбильнoе прилoжение в пoдарoк! Теoрия
+                    OНЛAЙН
+                  </li>
+                  <li>Учебный автoмoбиль на выбoр (oгрoмный автoпарк)</li>
+                </ol>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="more_info-button">
+              <a href="#" class="button">Записаться</a>
+            </div>
+          </div>
+          <div class="item blue">
+            <h4>Пакет дoп. занятий</h4>
+            <div class="line"></div>
+            <div class="item__content">
+              <div class="price">
+                <span class="subtitle">Оплата</span>
+                <div class="price-number">
+                  <span class="discount-price">10 000 Р</span>
+                </div>
+                <span class="text">10 занятий пo вoждению</span>
+              </div>
+              <div class="line"></div>
+              <div class="more_info">
+                <span class="subtitle">Дополнительная информация</span>
+                <ol>
+                  <li>Дoступен тoлькo для действующих ученикoв автoшкoлы</li>
+                  <li>Мoжнo приoбрести за 30 дней дo внутреннегo экзамена</li>
+                </ol>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="more_info-button">
+              <a href="#" class="button">Записаться</a>
+            </div>
+          </div>
+          <div class="item purple">
+            <h4>Пакет дoп. занятий</h4>
+            <div class="line"></div>
+            <div class="item__content">
+              <div class="price">
+                <span class="subtitle">Оплата</span>
+                <div class="price-number">
+                  <span class="discount-price">10 000 Р</span>
+                </div>
+                <span class="text">10 занятий пo вoждению</span>
+              </div>
+              <div class="line"></div>
+              <div class="time">
+                <span class="subtitle">Часы вождения</span>
+                <span class="text">90 минут</span>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="line"></div>
+            <div class="more_info-button">
+              <a href="#" class="button">Записаться</a>
+            </div>
+          </div>
+          <div class="item turquoise">
+            <h4>Aвтoмoбиль на экзамен</h4>
+            <div class="line"></div>
+            <div class="item__content">
+              <div class="price">
+                <span class="subtitle">Оплата</span>
+                <div class="price-number">
+                  <span class="discount-price">23 000 Р</span>
+                </div>
+                <span class="text">Дoгoвoр-oферта </span>
+              </div>
+              <div class="line"></div>
+            </div>
+            <div class="line"></div>
+            <div class="more_info-button">
+              <a href="#" class="button">Записаться</a>
+            </div>
+          </div>
+        </div>
+        <div class="cost__mob">
+          <div class="panel turquoise">
+            <div class="panel-heading">
+              <span>
+                <span>Минимальный</span>
+                <i>
+                  <svg
+                    width="16.000000"
+                    height="16.000000"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <clipPath id="clip877_23691">
+                        <rect
+                          id="down-arrow (17) 9"
+                          width="16.000000"
+                          height="16.000000"
+                          fill="white"
+                          fill-opacity="0"
+                        />
+                      </clipPath>
+                    </defs>
+                    <rect
+                      id="down-arrow (17) 9"
+                      width="16.000000"
+                      height="16.000000"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip877_23691)">
+                      <path
+                        id="Down_Arrow_3_"
+                        d="M7.5 11C7.375 11 7.24219 10.9512 7.14844 10.8535L2.14844 5.85352C1.95312 5.6582 1.95312 5.3418 2.14844 5.14648C2.34375 4.95117 2.65625 4.95117 2.85156 5.14648L7.5 9.79297L12.1484 5.14648C12.3438 4.95117 12.6562 4.95117 12.8516 5.14648C13.0469 5.3418 13.0469 5.6582 12.8516 5.85352L7.85156 10.8535C7.75781 10.9512 7.625 11 7.5 11Z"
+                        fill="#000000"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </i>
+              </span>
+            </div>
+            <div class="panel-collapse">
+              <div class="panel-body">
+                <div class="content">
+                  <div class="item">
+                    <span>Первоначальный взнос</span>
+                    <span>9 900р.</span>
+                  </div>
+                  <div class="item">
+                    <span>Теория</span>
+                    <span>Полный</span>
+                  </div>
+                  <div class="item">
+                    <span>Литература</span>
+                    <span>Нет</span>
+                  </div>
+                  <div class="item">
+                    <span>Практика</span>
+                    <span>10 часов</span>
+                  </div>
+                  <div class="item">
+                    <span>Автомобиль</span>
+                    <span>Стандарт</span>
+                  </div>
+                  <div class="item">
+                    <span>Организация сдачи экзаменов в ГАИ</span>
+                    <span>Включено</span>
+                  </div>
+                </div>
+                <div class="cost__button">
+                  <span>13 900р.</span>
+                  <a href="#" class="button">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel blue">
+            <div class="panel-heading">
+              <span>
+                <span>Минимальный</span>
+                <i>
+                  <svg
+                    width="16.000000"
+                    height="16.000000"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <clipPath id="clip877_23691">
+                        <rect
+                          id="down-arrow (17) 9"
+                          width="16.000000"
+                          height="16.000000"
+                          fill="white"
+                          fill-opacity="0"
+                        />
+                      </clipPath>
+                    </defs>
+                    <rect
+                      id="down-arrow (17) 9"
+                      width="16.000000"
+                      height="16.000000"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip877_23691)">
+                      <path
+                        id="Down_Arrow_3_"
+                        d="M7.5 11C7.375 11 7.24219 10.9512 7.14844 10.8535L2.14844 5.85352C1.95312 5.6582 1.95312 5.3418 2.14844 5.14648C2.34375 4.95117 2.65625 4.95117 2.85156 5.14648L7.5 9.79297L12.1484 5.14648C12.3438 4.95117 12.6562 4.95117 12.8516 5.14648C13.0469 5.3418 13.0469 5.6582 12.8516 5.85352L7.85156 10.8535C7.75781 10.9512 7.625 11 7.5 11Z"
+                        fill="#000000"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </i>
+              </span>
+            </div>
+            <div class="panel-collapse">
+              <div class="panel-body">
+                <div class="content">
+                  <div class="item">
+                    <span>Первоначальный взнос</span>
+                    <span>9 900р.</span>
+                  </div>
+                  <div class="item">
+                    <span>Теория</span>
+                    <span>Полный</span>
+                  </div>
+                  <div class="item">
+                    <span>Литература</span>
+                    <span>Нет</span>
+                  </div>
+                  <div class="item">
+                    <span>Практика</span>
+                    <span>10 часов</span>
+                  </div>
+                  <div class="item">
+                    <span>Автомобиль</span>
+                    <span>Стандарт</span>
+                  </div>
+                  <div class="item">
+                    <span>Организация сдачи экзаменов в ГАИ</span>
+                    <span>Включено</span>
+                  </div>
+                </div>
+                <div class="cost__button">
+                  <span>13 900р.</span>
+                  <a href="#" class="button">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel purple">
+            <div class="panel-heading">
+              <span>
+                <span>Минимальный</span>
+                <i>
+                  <svg
+                    width="16.000000"
+                    height="16.000000"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <defs>
+                      <clipPath id="clip877_23691">
+                        <rect
+                          id="down-arrow (17) 9"
+                          width="16.000000"
+                          height="16.000000"
+                          fill="white"
+                          fill-opacity="0"
+                        />
+                      </clipPath>
+                    </defs>
+                    <rect
+                      id="down-arrow (17) 9"
+                      width="16.000000"
+                      height="16.000000"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip877_23691)">
+                      <path
+                        id="Down_Arrow_3_"
+                        d="M7.5 11C7.375 11 7.24219 10.9512 7.14844 10.8535L2.14844 5.85352C1.95312 5.6582 1.95312 5.3418 2.14844 5.14648C2.34375 4.95117 2.65625 4.95117 2.85156 5.14648L7.5 9.79297L12.1484 5.14648C12.3438 4.95117 12.6562 4.95117 12.8516 5.14648C13.0469 5.3418 13.0469 5.6582 12.8516 5.85352L7.85156 10.8535C7.75781 10.9512 7.625 11 7.5 11Z"
+                        fill="#000000"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </i>
+              </span>
+            </div>
+            <div class="panel-collapse">
+              <div class="panel-body">
+                <div class="content">
+                  <div class="item">
+                    <span>Первоначальный взнос</span>
+                    <span>9 900р.</span>
+                  </div>
+                  <div class="item">
+                    <span>Теория</span>
+                    <span>Полный</span>
+                  </div>
+                  <div class="item">
+                    <span>Литература</span>
+                    <span>Нет</span>
+                  </div>
+                  <div class="item">
+                    <span>Практика</span>
+                    <span>10 часов</span>
+                  </div>
+                  <div class="item">
+                    <span>Автомобиль</span>
+                    <span>Стандарт</span>
+                  </div>
+                  <div class="item">
+                    <span>Организация сдачи экзаменов в ГАИ</span>
+                    <span>Включено</span>
+                  </div>
+                </div>
+                <div class="cost__button">
+                  <span>13 900р.</span>
+                  <a href="#" class="button">Записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section banner-clear-wrapper" style="margin-top: 120px">
+      <div class="container">
+        <div class="banner-clear">
+          <div class="info">
+            <span>Получите демо-доступ к учебному порталу</span>
+            <p>
+              Логин и пароль будут отправлены вам в WhatsApp на указанный номер
+            </p>
+            <form class="form-with-tel-and-btn banner-form">
+              <div class="banner-form-input">
+                <input type="tel" placeholder="+7 (___) ___ - __ - __" />
+              </div>
+              <button class="button">Оставить заявку</button>
+            </form>
+          </div>
+          <div class="img" style="display: none">
+            <img src="img/telephone-mob.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section"
+      style="background: rgb(236, 240, 244); padding: 80px 0"
+    >
+      <div class="container">
+        <h2 class="text-center">Статьи и новости</h2>
+        <div class="swiper news_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="img/items/news-slider/1.png" alt="" />
+              </div>
+              <h5>Название прогулки</h5>
+              <span class="date">21.11.2023</span>
+              <p>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled
+              </p>
+              <div class="news-btn">
+                <a href="#" class="button">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="img/items/news-slider/1.png" alt="" />
+              </div>
+              <h5>Название прогулки</h5>
+              <span class="date">21.11.2023</span>
+              <p>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled
+              </p>
+              <div class="news-btn">
+                <a href="#" class="button">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="img/items/news-slider/1.png" alt="" />
+              </div>
+              <h5>Название прогулки</h5>
+              <span class="date">21.11.2023</span>
+              <p>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled
+              </p>
+              <div class="news-btn">
+                <a href="#" class="button">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="img/items/news-slider/1.png" alt="" />
+              </div>
+              <h5>Название прогулки</h5>
+              <span class="date">21.11.2023</span>
+              <p>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled
+              </p>
+              <div class="news-btn">
+                <a href="#" class="button">Читать полностью</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="img/items/news-slider/1.png" alt="" />
+              </div>
+              <h5>Название прогулки</h5>
+              <span class="date">21.11.2023</span>
+              <p>
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled
+              </p>
+              <div class="news-btn">
+                <a href="#" class="button">Читать полностью</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination news_slider-pagination"></div>
+        </div>
+        <div class="button_under_block">
+          <a href="#" class="button">Посмотреть все отзывы</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="license_block">
+          <div class="text">
+            <h2>Сертифицированная автошкола</h2>
+            <p class="subtitle__text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore
+            </p>
+          </div>
+          <div class="license_block-image">
+            <a href="img/items/license/1.png" data-fancybox="gallery">
+              <img src="img/items/license/1.png" />
+            </a>
+            <a href="img/items/license/2.png" data-fancybox="gallery">
+              <img src="img/items/license/2.png" />
+            </a>
+            <a href="img/items/license/3.png" data-fancybox="gallery">
+              <img src="img/items/license/3.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map__block">
+      <div class="container">
+        <div class="map__block-title">
+          <h2>Наши филиалы</h2>
+          <div class="custom_select">
+            <select class="select" name="language">
+              <option disabled>Москва, Москвоская область</option>
+              <option value="HTML">HTML</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <div style="position: relative; overflow: hidden">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.371177%2C55.623977&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=9.83"
+            width="100%"
+            height="550px"
+            frameborder="0"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    @@include('blocks/modals.html') @@include('blocks/footer.html')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
