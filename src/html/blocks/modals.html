@@ -1,5 +1,5 @@
 <div
-  class="modal"
+  class="modal video-modal"
   aria-hidden="true"
   aria-labelledby="exampleModalToggleLabel"
   tabindex="-1"
@@ -18,7 +18,7 @@
   </div>
 </div>
 <div
-  class="modal"
+  class="modal video-modal"
   aria-hidden="true"
   aria-labelledby="exampleModalToggleLabel"
   tabindex="-1"
@@ -37,7 +37,7 @@
   </div>
 </div>
 <div
-  class="modal"
+  class="modal video-modal"
   aria-hidden="true"
   aria-labelledby="exampleModalToggleLabel"
   tabindex="-1"
@@ -51,6 +51,43 @@
             <source src="img/video.mp4" />
           </video>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="modal submit-modal"
+  aria-hidden="true"
+  aria-labelledby="exampleModalToggleLabel"
+  tabindex="-1"
+  id="submit"
+>
+  <div class="modal-dialog modal-dialog-centered submit-modal">
+    <div class="modal-content">
+      <div class="submit-modal-form">
+        <h3 class="text-center">Заказать консультацию</h3>
+        <span class="submit-modal-form-subtitle text-center"
+          >Заполните эту форму и наш администратор свяжемся с вами в короткие
+          сроки</span
+        >
+        <form>
+          <label for="name">
+            <span>Ваше имя</span>
+            <input type="text" id="name" placeholder="Введите текст " />
+          </label>
+          <label for="tel">
+            <span>Номер телефон</span>
+            <input type="tel" id="tel" placeholder="+7 (___) ___ - __ - __" />
+          </label>
+          <span
+            >Нажимая кнопку вы соглашаетесь с согласием на
+            <span class="link"
+              ><a href="#">обработку персональных данных</a></span
+            >
+            в форму обратной связи</span
+          >
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
   </div>

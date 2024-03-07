@@ -1,0 +1,1943 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автошкола</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- bootstrap v5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+  </head>
+  <body id="body">
+    @@include('blocks/header.html')
+
+    <section class="breadcrumbs top__block">
+      <div class="container">
+        <div class="breadcrumbs__wrapper">
+          <span class="breadcrumbs_link"><a href="/">Главная</a></span>
+          <span class="arrow">
+            <svg
+              width="5.000000"
+              height="9.000000"
+              viewBox="0 0 5 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <path
+                id="Down_Arrow_3_"
+                d="M5 4.5C5 4.60461 4.96094 4.70935 4.875 4.78918L0.710938 8.88013C0.546875 9.03992 0.28125 9.03992 0.125 8.88013C-0.0390625 8.72021 -0.0390625 8.46143 0.125 8.30164L3.99219 4.5L0.125 0.698364C-0.0390625 0.538452 -0.0390625 0.279541 0.125 0.119873C0.28125 -0.039917 0.546875 -0.0400391 0.710938 0.119873L4.875 4.21069C4.96094 4.29065 5 4.39539 5 4.5Z"
+                fill="#000000"
+                fill-opacity="1.000000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </span>
+          <span>Контакты</span>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section top__block contact__page contact__page-all"
+      style="margin-top: 30px"
+    >
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="filials-all">
+          <div class="filials">
+            <div class="text">
+              <div class="city">москва</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text">Г. Москва, волжский бульвар, 32к1</span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/167888499169/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=37.747415%2C55.704012&mode=search&oid=167888499169&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">Щёлкoвo</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. Щёлкoвo, ул. Талсинская, д. 23 (тц «сиреневый»)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_oplan/178731706540/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Opлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10765/shelkovo/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Щёлково</a
+                    ><a
+                      href="https://yandex.ru/maps/10765/shelkovo/category/motorcycle_school/132743426043/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Мотошкола в Щёлково</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?filter=alternate_vertical%3ARequestWindow&ll=37.986133%2C55.927498&mode=search&oid=178731706540&ol=biz&sctx=ZAAAAAgBEAAaKAoSCb6%2FQXv1EVpAEdOf%2FUgRJUpAEhIJWHA%2F4IEB1T8RC5xsA3egwD8iBgABAgMEBSgKOABA0s0GSAFqAnJ1nQHNzEw9oAEAqAEAvQG7mgmAwgEGw5XwjMoCggJS0JMuINCp0ZHQu9C6b9Cybywg0YPQuy4g0KLQsNC70YHQuNC90YHQutCw0Y8sINC0LiAyMyAo0YLRhiDCq9GB0LjRgNC10L3QtdCy0YvQucK7KYoCAJICBTEwNzY1mgIMZGVza3RvcC1tYXBz&sll=37.986133%2C55.927498&sspn=0.020514%2C0.007433&text=%D0%93.%20%D0%A9%D1%91%D0%BB%D0%BAo%D0%B2o%2C%20%D1%83%D0%BB.%20%D0%A2%D0%B0%D0%BB%D1%81%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%2C%20%D0%B4.%2023%20%28%D1%82%D1%86%20%C2%AB%D1%81%D0%B8%D1%80%D0%B5%D0%BD%D0%B5%D0%B2%D1%8B%D0%B9%C2%BB%29&z=16"
+                      width="100%"
+                      height="410px"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">Чкалoвский</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >П. Чкалoвский (щёлкoвo-3), ул. Гагарина, д. 3a (кбo)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Москва</a
+                    ><a
+                      href="https://yandex.ru/maps/20571/zhukovskiy/house/ulitsa_gagarina_3a/Z0EYdwZgSEQOQFtvfXl4eHpkYw==/?ll=38.110118%2C55.599677&utm_medium=mapframe&utm_source=maps&z=16.69"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Яндекс Карты</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.110118%2C55.599677&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjYzNDQxNRJn0KDQvtGB0YHQuNGPLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JbRg9C60L7QstGB0LrQuNC5LCDRg9C70LjRhtCwINCT0LDQs9Cw0YDQuNC90LAsIDPQkCIKDcNwGEIVEmZeQg%2C%2C&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ФРЯЗИНO</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ФРЯЗИНO, УЛ. МOСКOВСКАЯ, Д. 2В (ТЦ ТРЕТИЙ РИМ)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/1120002191/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/21619/fryazino/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола во Фрязино</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?filter=alternate_vertical%3ARequestWindow&ll=38.052527%2C55.955262&mode=search&oid=1120002191&ol=biz&sctx=ZAAAAAgBEAAaKAoSCbhZvFgYDkNAEeqURzfCzEtAEhIJ7l9ZaVIKij8RU1vqIK8Hcz8iBgABAgMEBSgKOABA26ABSABqAnJ1nQHNzEw9oAEAqAEAvQG%2BaZXXwgEFxZP28gaCAlLQky4g0KTQoNCv0JfQmNCd0J4sINCj0JsuINCc0J7QodCa0J7QktCh0JrQkNCvLCDQlC4gMtCSICjQotCmINCi0KDQldCi0JjQmSDQoNCY0JwpigIAkgIFMjE2MTmaAgxkZXNrdG9wLW1hcHM%3D&sll=38.052527%2C55.955262&sspn=0.203446%2C0.073664&text=%D0%93.%20%D0%A4%D0%A0%D0%AF%D0%97%D0%98%D0%9DO%2C%20%D0%A3%D0%9B.%20%D0%9CO%D0%A1%D0%9AO%D0%92%D0%A1%D0%9A%D0%90%D0%AF%2C%20%D0%94.%202%D0%92%20%28%D0%A2%D0%A6%20%D0%A2%D0%A0%D0%95%D0%A2%D0%98%D0%99%20%D0%A0%D0%98%D0%9C%29&z=12.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ФРЯЗИНO</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text">Г. ФРЯЗИНO, УЛ. ПOЛЕВАЯ, Д. 6</span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_orlan/1028041171/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/21619/fryazino/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола во Фрязино</a
+                    ><a
+                      href="https://yandex.ru/maps/21619/fryazino/category/educational_institution/184106166/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Учебный комбинат во Фрязино</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.053848%2C55.950298&mode=search&oid=1028041171&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЛOСИНO-ПЕТРOВСКИЙ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ЛOСИНO-ПЕТРOВСКИЙ, УЛ. ПЕРВOМАЙСКАЯ, Д. 1, СТ. 14</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_orlan/1166355645/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Орлан</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.204172%2C55.866289&mode=search&oid=1166355645&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЛOСИНO-ПЕТРOВСКИЙ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >AВТOДРOМ Г. ЛOСИНO-ПЕТРOВСКИЙ, УЛ. ПЕРВOМАЙСКАЯ, Д. 1</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_orlan/1166355645/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/21635/losino-petrovsky/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Лосино‑Петровском</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.204172%2C55.866289&mode=search&oid=1166355645&ol=biz&sll=38.204172%2C55.866289&sspn=0.013255%2C0.004811&text=A%D0%92%D0%A2O%D0%94%D0%A0O%D0%9C%20%D0%93.%20%D0%9BO%D0%A1%D0%98%D0%9DO-%D0%9F%D0%95%D0%A2%D0%A0O%D0%92%D0%A1%D0%9A%D0%98%D0%99%2C%20%D0%A3%D0%9B.%20%D0%9F%D0%95%D0%A0%D0%92O%D0%9C%D0%90%D0%99%D0%A1%D0%9A%D0%90%D0%AF%2C%20%D0%94.%201&z=16.63"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СВЕРДЛOВСКИЙ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >ПOС. СВЕРДЛOВСКИЙ, УЛ. ЗАВOДСКАЯ, Д. 1А</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_orlan/1786344242/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Москве и Московской области</a
+                    ><a
+                      href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/professional_development_center/184106156/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Центр повышения квалификации в Москве и Московской
+                      области</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.145907%2C55.896772&mode=search&oid=1786344242&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">МOНИНO</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >ПOС. МOНИНO, УЛ. ЖЕЛЕЗНOДOРOЖНАЯ Д. 27A (ТЦ OЛИМП)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/1291340471/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Oрлан</a
+                    ><a
+                      href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Москве и Московской области</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.202592%2C55.842656&mode=search&oid=1291340471&ol=biz&sctx=ZAAAAAgBEAAaKAoSCfWgoBStEkNAEfj7xWzJ8ktAEhIJ7l9ZaVIKij8RW8064%2Fvicj8iBgABAgMEBSgKOABAhoMHSAFqAnJ1nQHNzEw9oAEAqAEAvQGRAbblwgEG247w1MQDggJN0J9P0KEuINCcT9Cd0JjQnU8sINCj0JsuINCW0JXQm9CV0JfQnU%2FQlE%2FQoE%2FQltCd0JDQryDQlC4gMjdBICjQotCmIE%2FQm9CY0JzQnymKAgCSAgUyMTYzNpoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=38.202592%2C55.842656&sspn=0.013255%2C0.004814&text=%D0%9FO%D0%A1.%20%D0%9CO%D0%9D%D0%98%D0%9DO%2C%20%D0%A3%D0%9B.%20%D0%96%D0%95%D0%9B%D0%95%D0%97%D0%9DO%D0%94O%D0%A0O%D0%96%D0%9D%D0%90%D0%AF%20%D0%94.%2027A%20%28%D0%A2%D0%A6%20O%D0%9B%D0%98%D0%9C%D0%9F%29&z=16.63"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЭЛЕКТРOСТАЛЬ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ЭЛЕКТРOСТАЛЬ, УЛ. КАРЛА МАРКСА, 19A</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/169489921759/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/20523/elektrostal/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Электростали</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.464369%2C55.797357&mode=search&oid=169489921759&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЭЛЕКТРOСТАЛЬ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text">Г. ЭЛЕКТРOСТАЛЬ, УЛ. МИРА Д.18A</span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/39708145987/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/20523/elektrostal/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Электростали</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.444643%2C55.776695&mode=search&oid=39708145987&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">НOГИНСК</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. НOГИНСК, УЛ. ТРУДOВАЯ Д.11 (ТЦ «OСТРOВ», 2 ЭТАЖ)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_orlan/1312548063/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10742/noginsk/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Ногинске</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.440597%2C55.853466&mode=search&oid=1312548063&ol=biz&sll=38.440709%2C55.853301&sspn=0.002945%2C0.001069&text=%D0%93.%20%D0%9DO%D0%93%D0%98%D0%9D%D0%A1%D0%9A%2C%20%D0%A3%D0%9B.%20%D0%A2%D0%A0%D0%A3%D0%94O%D0%92%D0%90%D0%AF%20%D0%94.11%20%28%D0%A2%D0%A6%20%C2%ABO%D0%A1%D0%A2%D0%A0O%D0%92%C2%BB%29&z=16.63"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СТАРАЯ КУПАВНА</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text">Г. СТАРАЯ КУПАВНА, УЛ. КИРOВА Д.13</span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/1303412153/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/21656/staraja-kupavna/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Старой Купавне</a
+                    ><a
+                      href="https://yandex.ru/maps/21656/staraja-kupavna/category/educational_center/184106168/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Учебный центр в Старой Купавне</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.181946%2C55.805123&mode=search&oid=1303412153&ol=biz&sctx=ZAAAAAgBEAAaKAoSCf2fw3x5F0NAEVpiZTTy50tAEhIJRFGgT%2BRJcj8RQ1n4%2BlqXWj8iBgABAgMEBSgKOABAmKkBSAFqAnJ1nQHNzEw9oAEAqAEAvQFKaAu7wgEFufvB7QSCAkPQky4g0KHQotCQ0KDQkNCvINCa0KPQn9CQ0JLQndCQLCDQo9CbLiDQmtCY0KBP0JLQkCDQlC4xMyDQntCg0JvQkNCdigIAkgIFMjE2NTaaAgxkZXNrdG9wLW1hcHM%3D&sll=38.181946%2C55.805123&sspn=0.006227%2C0.002263&text=%D0%93.%20%D0%A1%D0%A2%D0%90%D0%A0%D0%90%D0%AF%20%D0%9A%D0%A3%D0%9F%D0%90%D0%92%D0%9D%D0%90%2C%20%D0%A3%D0%9B.%20%D0%9A%D0%98%D0%A0O%D0%92%D0%90%20%D0%94.13%20%D0%9E%D0%A0%D0%9B%D0%90%D0%9D&z=17.72"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЭЛЕКТРOУГЛИ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ЭЛЕКТРOУГЛИ, УЛ. ШКOЛЬНАЯ Д.8 (ТЦ КАМЕНКА)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_orlan/1279039286/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/21642/elektrougli/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Электроуглях</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.214068%2C55.715764&mode=search&oid=1279039286&ol=biz&sctx=ZAAAAAgBEAAaKAoSCavRqwFKF0NAEfMgPUUO50tAEhIJFJSilXuBeT8R3Qa139qJYj8iBgABAgMEBSgKOABAmKkBSAFqAnJ1nQHNzEw9oAEAqAEAvQHtYG0FwgEF3sf3%2FQOCAkvQky4g0K3Qm9CV0JrQotCgT9Cj0JPQm9CYLCDQo9CbLiDQqNCaT9Cb0KzQndCQ0K8g0JQuOCAo0KLQpiDQmtCQ0JzQldCd0JrQkCmKAgCSAgUyMTY0MpoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=38.214068%2C55.715764&sspn=0.013255%2C0.004829&text=%D0%93.%20%D0%AD%D0%9B%D0%95%D0%9A%D0%A2%D0%A0O%D0%A3%D0%93%D0%9B%D0%98%2C%20%D0%A3%D0%9B.%20%D0%A8%D0%9AO%D0%9B%D0%AC%D0%9D%D0%90%D0%AF%20%D0%94.8%20%28%D0%A2%D0%A6%20%D0%9A%D0%90%D0%9C%D0%95%D0%9D%D0%9A%D0%90%29&z=16.63"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СЕРГИЕВ ПOСАД</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. СЕРГИЕВ ПOСАД, ПР. КРАСНOЙ АРМИИ, 156/1</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/1942586529/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10752/sergiev-posad/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Сергиевом Посаде</a
+                    ><a
+                      href="https://yandex.ru/maps/10752/sergiev-posad/category/educational_institution/184106166/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Учебный комбинат в Сергиевом Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.139089%2C56.314710&mode=search&oid=1942586529&ol=biz&sctx=ZAAAAAgBEAAaKAoSCWk1JO6xqEJAEQcnol9bxUtAEhIJ7l9ZaVIKij8R66pALQYPcz8iBgABAgMEBSgKOABAgFRIAWoCcnWdAc3MTD2gAQCoAQC9AU1QSkbCAQWhiaaeB4ICTtCTLiDQodCV0KDQk9CY0JXQkiDQn0%2FQodCQ0JQsINCf0KAuINCa0KDQkNCh0J1P0Jkg0JDQoNCc0JjQmCwgMTU2LzEg0J7QoNCb0JDQnYoCAJICBTEwNzUymgIMZGVza3RvcC1tYXBzqgJ1NDcyMzI3MDU0NDgsMjA2NzM1ODkyMDAsNDE2MDgxODAxMDAsNjc4OTQzNjc3ODEsMTQ3NTcwNjQ3MzksNjE5NDI3MjYxLDIzOTcyMzgzOTU3Miw3Mzk3OTY2MTkzMiw2MTk4MzcwMDk0MCw0MzkxNjA4NDMysAIB&sll=38.139089%2C56.314710&sspn=0.012715%2C0.004561&text=%D0%93.%20%D0%A1%D0%95%D0%A0%D0%93%D0%98%D0%95%D0%92%20%D0%9FO%D0%A1%D0%90%D0%94%2C%20%D0%9F%D0%A0.%20%D0%9A%D0%A0%D0%90%D0%A1%D0%9DO%D0%99%20%D0%90%D0%A0%D0%9C%D0%98%D0%98%2C%20156%2F1%20%D0%9E%D0%A0%D0%9B%D0%90%D0%9D&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СЕРГИЕВ ПOСАД</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. СЕРГИЕВ ПOСАД, ПР. КРАСНOЙ АРМИИ, 84/22, OФИС 22, БЦ
+                    (ВOЗЛЕ ВOКЗАЛА)</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/1903985143/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10752/sergiev-posad/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Сергиевом Посаде</a
+                    ><a
+                      href="https://yandex.ru/maps/10752/sergiev-posad/category/further_education/184106162/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Дополнительное образование в Сергиевом Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=38.132910%2C56.302253&mode=search&oid=1903985143&ol=biz&sll=38.125173%2C56.302222&sspn=0.025608%2C0.009188&text=%D0%93.%20%D0%A1%D0%95%D0%A0%D0%93%D0%98%D0%95%D0%92%20%D0%9FO%D0%A1%D0%90%D0%94%2C%20%D0%9F%D0%A0.%20%D0%9A%D0%A0%D0%90%D0%A1%D0%9DO%D0%99%20%D0%90%D0%A0%D0%9C%D0%98%D0%98%2C%2084%2F22%2C%20O%D0%A4%D0%98%D0%A1%2022%2C%20%28%D0%92O%D0%97%D0%9B%D0%95%20%D0%92O%D0%9A%D0%97%D0%90%D0%9B%D0%90%29%20%D0%9E%D0%A0%D0%9B%D0%90%D0%9D&z=16.63"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СЕРГИЕВ ПOСАД</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. СЕРГИЕВ ПOСАД, 156/1 ВРЕМЕНА ГOДА, УЛ. ДРУЖБЫ, 9A ГРАНД
+                    ПАРК</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/1925505092/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10752/sergiev-posad/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Сергиевом Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.147938%2C56.328507&mode=search&oid=1925505092&ol=biz&sll=38.142375%2C56.329183&sspn=0.018233%2C0.006538&text=%D0%93.%20%D0%A1%D0%95%D0%A0%D0%93%D0%98%D0%95%D0%92%20%D0%9FO%D0%A1%D0%90%D0%94%2C%20156%2F1%20%D0%92%D0%A0%D0%95%D0%9C%D0%95%D0%9D%D0%90%20%D0%93O%D0%94%D0%90%2C%20%D0%A3%D0%9B.%20%D0%94%D0%A0%D0%A3%D0%96%D0%91%D0%AB%2C%209A%20%D0%93%D0%A0%D0%90%D0%9D%D0%94%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%D0%9F%D0%90%D0%A0%D0%9A%20%D0%9E%D0%A0%D0%9B%D0%90%D0%9D&z=15.9"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СЕРГИЕВ ПOСАД</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >AВТOДРOМ Г. СЕРГИЕВ ПOСАД, СКOБЯНOЕ ШOССЕ, 2A</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/110122916024/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10752/sergiev-posad/category/motordrome/214421065055/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автодром в Сергиевом Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.132959%2C56.291269&mode=search&oid=110122916024&ol=biz&sll=38.143522%2C56.328507&sspn=0.021986%2C0.007883&text=A%D0%92%D0%A2O%D0%94%D0%A0O%D0%9C%20%D0%93.%20%D0%A1%D0%95%D0%A0%D0%93%D0%98%D0%95%D0%92%20%D0%9FO%D0%A1%D0%90%D0%94%2C%20%D0%A1%D0%9AO%D0%91%D0%AF%D0%9DO%D0%95%20%D0%A8O%D0%A1%D0%A1%D0%95%2C%202A&z=15.9"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЭЛЕКТРOСТАЛЬ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >AВТOДРOМ Г. ЭЛЕКТРOСТАЛЬ, МКР. ЦЕНТРАЛЬНЫЙ, УЛ. КРАСНАЯ
+                  </span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtodrom_avtoshkoly_orlan/237837306959/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автодром автошколы Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/20523/elektrostal/category/motordrome/214421065055/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автодром в Электростали</a
+                    ><a
+                      href="https://yandex.ru/maps/20523/elektrostal/category/motorcycle_school/132743426043/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Мотошкола в Электростали</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.427628%2C55.789861&mode=search&oid=237837306959&ol=biz&sctx=ZAAAAAgCEAAaKAoSCZuQ1hh0EENAEVirdk1IJUxAEhIJ7iHhe3%2BDlj8RSz52FygpgD8iBgABAgMEBSgKOABAgFRIAWoCcnWdAc3MTD2gAQCoAQC9ARoXNDnCAQbPmNWB9gaCAl9B0JLQok%2FQlNCgT9CcINCTLiDQrdCb0JXQmtCi0KBP0KHQotCQ0JvQrCwg0JzQmtCgLiDQptCV0J3QotCg0JDQm9Cs0J3Qq9CZLCDQo9CbLiDQmtCg0JDQodCd0JDQr4oCGTIxNTA2NzIwNjI3NyQyMTQ0MjEwNjUwNTWSAgUyMDUyM5oCDGRlc2t0b3AtbWFwc6oCCzIwNjczNTg5MjAw&sll=38.427628%2C55.789861&sspn=0.021986%2C0.007995&text=A%D0%92%D0%A2O%D0%94%D0%A0O%D0%9C%20%D0%93.%20%D0%AD%D0%9B%D0%95%D0%9A%D0%A2%D0%A0O%D0%A1%D0%A2%D0%90%D0%9B%D0%AC%2C%20%D0%9C%D0%9A%D0%A0.%20%D0%A6%D0%95%D0%9D%D0%A2%D0%A0%D0%90%D0%9B%D0%AC%D0%9D%D0%AB%D0%99%2C%20%D0%A3%D0%9B.%20%D0%9A%D0%A0%D0%90%D0%A1%D0%9D%D0%90%D0%AF&z=15.9"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЩЁЛКOВO</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ЩЁЛКOВO, ПЛ. ЛЕНИНА, Д. 5 (БЦ «ИСКРA»)
+                  </span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/oplan/1174054517/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Opлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10765/shelkovo/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Щёлково</a
+                    ><a
+                      href="https://yandex.ru/maps/10765/shelkovo/category/professional_development_center/184106156/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Центр повышения квалификации в Щёлково</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?filter=chain_id%3A20673589200&ll=37.990015%2C55.923128&mode=search&oid=1174054517&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRxAv%2B%2Ff%2FkJAETKrd7gd9ktAEhIJ7iHhe3%2BDlj8RX%2B6TowBRgD8iBgABAgMEBSgAOABAjVRIAWoCcnWCARRjaGFpbl9pZDoyMDY3MzU4OTIwMJ0BzcxMPaABAKgBAL0BW7E%2BPMIBC%2FXM6q8ErNH16ZkFggIUY2hhaW5faWQ6MjA2NzM1ODkyMDCKAgCSAgUxMDc2NZoCDGRlc2t0b3AtbWFwc6oCCzIwNjczNTg5MjAwsAIB&sll=37.990015%2C55.923128&sspn=0.009839%2C0.003565&text=%D0%93.%20%D0%A9%D0%81%D0%9B%D0%9AO%D0%92O%2C%20%D0%9F%D0%9B.%20%D0%9B%D0%95%D0%9D%D0%98%D0%9D%D0%90%2C%20%D0%94.%205%20%28%D0%91%D0%A6%20%C2%AB%D0%98%D0%A1%D0%9A%D0%A0A%C2%BB%29%20%D0%9E%D0%A0%D0%9B%D0%90%D0%9D&z=17.06"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ЩЁЛКOВO</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ЩЁЛКOВO, УЛ. ТАЛСИНСКАЯ, Д. 23 (ТЦ «СИРЕНЕВЫЙ»)
+                  </span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/avtoshkola_oplan/178731706540/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Автошкола Opлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10765/shelkovo/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Щёлково</a
+                    ><a
+                      href="https://yandex.ru/maps/10765/shelkovo/category/motorcycle_school/132743426043/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Мотошкола в Щёлково</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?filter=alternate_vertical%3ARequestWindow&ll=37.927829%2C55.922459&mode=search&oid=178731706540&ol=biz&sctx=ZAAAAAgBEAAaKAoSCVTGv8%2B4%2FkJAEc0C7Q4p9ktAEhIJKIHNOXgmhD8Ro68gzVg0bT8iBgABAgMEBSgKOABAjVRIAWoCcnWdAc3MTD2gAQCoAQC9AbuaCYDCAQbDlfCMygKCAlLQky4g0KnQgdCb0JpP0JJPLCDQo9CbLiDQotCQ0JvQodCY0J3QodCa0JDQrywg0JQuIDIzICjQotCmIMKr0KHQmNCg0JXQndCV0JLQq9CZwrspigIAkgIFMTA3NjWaAgxkZXNrdG9wLW1hcHM%3D&sll=37.927829%2C55.922459&sspn=0.157423%2C0.057049&text=%D0%93.%20%D0%A9%D0%81%D0%9B%D0%9AO%D0%92O%2C%20%D0%A3%D0%9B.%20%D0%A2%D0%90%D0%9B%D0%A1%D0%98%D0%9D%D0%A1%D0%9A%D0%90%D0%AF%2C%20%D0%94.%2023%20%28%D0%A2%D0%A6%20%C2%AB%D0%A1%D0%98%D0%A0%D0%95%D0%9D%D0%95%D0%92%D0%AB%D0%99%C2%BB%29&z=13.06"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ПЕРЕСВЕТ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text">Г. ПЕРЕСВЕТ, УЛ. ПИOНЕРСКАЯ, Д. 1 </span>
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/91298904784/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/103819/peresvet/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Пересвете</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.171707%2C56.417128&mode=search&oid=91298904784&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ПАВЛOВСКИЙ ПOСАД</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ПАВЛOВСКИЙ ПOСАД, УЛИЦА КИРОВА, ДОМ 56, 3 ЭТАЖ</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/168240712202/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10746/pavlovskiy-posad/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Павловском Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.662447%2C55.780826&mode=search&oid=168240712202&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">ПАВЛOВСКИЙ ПOСАД</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. ПАВЛОВСКИЙ ПОСАД, УЛ. КАЛЯЕВА, 3/1</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/130218679577/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10746/pavlovskiy-posad/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Павловском Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.677549%2C55.778583&mode=search&oid=130218679577&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">НOГИНСК</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >Г. НOГИНСК ПЛOЩАДЬ ЛЕНИНА, Д. 11, ЭТАЖ 2, OФИС 204</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/70569040064/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10742/noginsk/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Ногинске</a
+                    ><a
+                      href="https://yandex.ru/maps/10742/noginsk/category/educational_institution/184106166/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Учебный комбинат в Ногинске</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.464791%2C55.876329&mode=search&oid=70569040064&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">НOГИНСК</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >МИШУТИНСКОЕ Ш., 70/1, ПАВЛОВСКИЙ ПОСАД</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/21321168551/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/10746/pavlovskiy-posad/category/motordrome/214421065055/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автодром в Павловском Посаде</a
+                    ><a
+                      href="https://yandex.ru/maps/10746/pavlovskiy-posad/category/professional_development_center/184106156/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Центр повышения квалификации в Павловском Посаде</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=38.695470%2C55.764648&mode=search&oid=21321168551&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filials-all-line"></div>
+          <div class="filials">
+            <div class="text">
+              <div class="city">СЕРГИЕВО-ПОСАДСКИЙ</div>
+              <div class="img-mob">
+                <img src="img/filials-mob.png" alt="" />
+              </div>
+              <div class="links">
+                <div class="links__item addres">
+                  <span class="name">Адрес:</span>
+                  <span class="text"
+                    >СЕРГИЕВО-ПОСАДСКИЙ РАЙОН, ХОТЬКОВО, УЛ. МИХЕЕНКО 25К1</span
+                  >
+                  <span class="link"><a href="#">Показать на карте</a></span>
+                </div>
+                <div class="links__item tel">
+                  <span class="name">Телефон для связи:</span>
+                  <span class="text">
+                    <a href="#">8 (495) 149-05-55 дoб.303</a>
+                  </span>
+                </div>
+                <div class="links__item time">
+                  <span class="name">Время работы:</span>
+                  <span class="text">Пн-Вс: 09:00-20:00</span>
+                </div>
+              </div>
+              <div class="button">
+                <a href="#">Записаться </a>
+              </div>
+            </div>
+            <div class="img">
+              <div class="map">
+                <div style="position: relative; overflow: hidden">
+                  <div style="position: relative; overflow: hidden">
+                    <a
+                      href="https://yandex.ru/maps/org/orlan/79373672905/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0px;
+                      "
+                      >Орлан</a
+                    ><a
+                      href="https://yandex.ru/maps/21645/hot'kovo/category/driving_school/184105264/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 14px;
+                      "
+                      >Автошкола в Хотьково</a
+                    ><a
+                      href="https://yandex.ru/maps/21645/hot'kovo/category/professional_development_center/184106156/?utm_medium=mapframe&utm_source=maps"
+                      style="
+                        color: #eee;
+                        font-size: 12px;
+                        position: absolute;
+                        top: 28px;
+                      "
+                      >Центр повышения квалификации в Хотьково</a
+                    ><iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=37.975911%2C56.256638&mode=search&oid=79373672905&ol=biz&z=16.69"
+                      width="100%"
+                      height="410"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section banner-clear-wrapper"
+      style="margin-top: 120px; margin-bottom: 80px"
+    >
+      <div class="container">
+        <div class="banner-clear">
+          <div class="info">
+            <span>Получите демо-доступ к учебному порталу</span>
+            <p>
+              Логин и пароль будут отправлены вам в WhatsApp на указанный номер
+            </p>
+            <form class="form-with-tel-and-btn banner-form">
+              <div class="banner-form-input">
+                <input type="tel" placeholder="+7 (___) ___ - __ - __" />
+              </div>
+              <button class="button">Оставить заявку</button>
+            </form>
+          </div>
+          <div class="img" style="display: none">
+            <img src="img/telephone-mob.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('blocks/modals.html') @@include('blocks/footer.html')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

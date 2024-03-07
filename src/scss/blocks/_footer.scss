@@ -88,7 +88,7 @@
       }
     }
     .footer_contacts {
-      max-width: 190px;
+      max-width: 170px;
       width: 100%;
       > span {
         font-size: 20px;
@@ -97,6 +97,7 @@
         color: #fff;
       }
       .info-time {
+        margin-top: 20px;
         .info-text {
           position: relative;
           font-size: 17px;
@@ -113,6 +114,7 @@
         }
       }
       .info-tel {
+        margin-top: 20px;
         .info-text {
           position: relative;
           color: #fff;

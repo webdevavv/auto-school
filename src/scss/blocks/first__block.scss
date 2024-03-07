@@ -158,6 +158,9 @@
           color: var(--accent);
         }
       }
+      span.button {
+        max-width: 204px;
+      }
     }
   }
 }

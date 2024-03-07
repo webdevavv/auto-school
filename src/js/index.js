@@ -4,23 +4,32 @@ const headerTop = document.querySelector(".header__top");
 const sectionFirst = document.querySelector(".top__block");
 
 const topHeader = headerBanner.offsetHeight + headerTop.offsetHeight;
+const screenWidth = window.innerWidth;
 
-window.addEventListener("scroll", () => {
-  let scrollTop = window.scrollY;
-  if (scrollTop >= topHeader) {
-    fixedHeader.classList.add("fixed");
-    sectionFirst.style.marginTop = `${topHeader + 35}px`;
-  } else {
-    fixedHeader.classList.remove("fixed");
-    sectionFirst.style.marginTop = null;
-  }
-});
+if (screenWidth >= 1024) {
+  window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY;
+    if (scrollTop >= topHeader) {
+      fixedHeader.classList.add("fixed");
+      sectionFirst.style.marginTop = `${topHeader + 35}px`;
+    } else {
+      fixedHeader.classList.remove("fixed");
+      sectionFirst.style.marginTop = null;
+    }
+  });
+}
+
 $(function () {
   $("#hamburger").on("click", function () {
     $(this).toggleClass("close");
     $("#nav").toggleClass("visible");
     $("#body").toggleClass("no-scroll");
     $("#core").on("click", function () {
+      $("#hamburger").removeClass("close");
+      $("#nav").removeClass("visible");
+      $("#body").removeClass("no-scroll");
+    });
+    $(".close-btn").on("click", function () {
       $("#hamburger").removeClass("close");
       $("#nav").removeClass("visible");
       $("#body").removeClass("no-scroll");

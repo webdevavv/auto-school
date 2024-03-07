@@ -56,6 +56,8 @@
   width: 100%;
   z-index: 99;
   user-select: none;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .new-select__list.on {
@@ -69,5 +71,5 @@
 }
 
 .new-select__item span:hover {
-  color: var(--yellow);
+  color: var(--accent);
 }
