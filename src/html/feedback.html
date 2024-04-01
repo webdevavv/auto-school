@@ -58,30 +58,32 @@
 
     <section class="section feedback__page" style="margin-top: 30px">
       <div class="container">
-        <h2>Отзывы</h2>
-        <div class="custom_select">
-          <span>Тип отзыва</span>
-          <select class="select" name="language">
-            <option disabled>Яндекс</option>
-            <option value="Google">Google</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="PHP">PHP</option>
-          </select>
-        </div>
-        <div class="feedback__page-block">
-          <div class="feedback-ya">
-            <div class="item">
-              <iframe
-                loading="lazy"
-                style="
-                  width: 100%;
-                  height: 100%;
-                  border: 1px solid #e6e6e6;
-                  border-radius: 8px;
-                  box-sizing: border-box;
-                "
-                src="https://yandex.ru/maps-reviews-widget/1174054517?comments"
-              ></iframe>
+        <div class="feedback__page-inner">
+          <h2>Отзывы</h2>
+          <div class="custom_select">
+            <span>Тип отзыва</span>
+            <select class="select" name="language">
+              <option disabled>Яндекс</option>
+              <option value="Google">Google</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+            </select>
+          </div>
+          <div class="feedback__page-block">
+            <div class="feedback-ya">
+              <div class="item">
+                <iframe
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #e6e6e6;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                  "
+                  src="https://yandex.ru/maps-reviews-widget/1174054517?comments"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +100,11 @@
             </p>
             <form class="form-with-tel-and-btn banner-form">
               <div class="banner-form-input">
-                <input type="tel" placeholder="+7 (___) ___ - __ - __" />
+                <input
+                  type="tel"
+                  class="phone__input"
+                  placeholder="+7 (___) ___ - __ - __"
+                />
               </div>
               <button class="button">Оставить заявку</button>
             </form>
@@ -260,6 +266,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="./js/index.bundle.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      $(function () {
+        $(".phone__input").mask("+7(999) 999-99-99");
+      });
+    </script>
   </body>
 </html>

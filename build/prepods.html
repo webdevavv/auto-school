@@ -35,6 +35,27 @@
         <div class="flex">
           <div class="choose__region">
             <span>Москва</span>
+            <div
+              class="region-confirm js-region-confirm"
+              id="region-confirm"
+              style="display: none"
+            >
+              <div class="region-confirm__inner">
+                <div class="region-confirm__name">Ваш регион — Москва?</div>
+                <div class="region-confirm__btns">
+                  <a class="button" href="#">Нет</a>
+                  <a
+                    class="button button--blue"
+                    href="#"
+                    id="region-confirm-button"
+                    >Да, верно</a
+                  >
+                </div>
+                <div class="region-confirm__note">
+                  От выбранного региона зависят цены и сроки доставки
+                </div>
+              </div>
+            </div>
           </div>
           <div class="link license">
             <a href="#">Лицензия</a>
@@ -211,7 +232,7 @@
               <li><a href="#">Страница №4</a></li>
             </ul>
           </li>
-          <li><a href="#">Организациям</a></li>
+          <li class="active-page"><a href="#">Организациям</a></li>
           <li class="dropdown">
             <a href="#">Учащимся</a>
             <ul>
@@ -754,7 +775,11 @@
             </p>
             <form class="form-with-tel-and-btn banner-form">
               <div class="banner-form-input">
-                <input type="tel" placeholder="+7 (___) ___ - __ - __" />
+                <input
+                  type="tel"
+                  class="phone__input"
+                  placeholder="+7 (___) ___ - __ - __"
+                />
               </div>
               <button class="button">Оставить заявку</button>
             </form>
@@ -1305,6 +1330,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="./js/index.bundle.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      $(function () {
+        $(".phone__input").mask("+7(999) 999-99-99");
+      });
+    </script>
   </body>
 </html>

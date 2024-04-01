@@ -528,7 +528,11 @@
             </p>
             <form class="form-with-tel-and-btn banner-form">
               <div class="banner-form-input">
-                <input type="tel" placeholder="+7 (___) ___ - __ - __" />
+                <input
+                  type="tel"
+                  class="phone__input"
+                  placeholder="+7 (___) ___ - __ - __"
+                />
               </div>
               <button class="button">Оставить заявку</button>
             </form>
@@ -690,6 +694,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="./js/index.bundle.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      $(function () {
+        $(".phone__input").mask("+7(999) 999-99-99");
+      });
+    </script>
   </body>
 </html>
