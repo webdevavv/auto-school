@@ -7,17 +7,22 @@
     z-index: 999;
   }
   .header__banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85px;
-    background-image: url(../img/header-banner-bg.png);
-    background-color: var(--yellow);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0%;
-    color: var(--black);
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 85px;
+      background-image: url(../img/header-banner-bg.png);
+      background-color: var(--yellow);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0%;
+      color: var(--black);
+      @include hover {
+        background-image: url(../img/header-banner-bg-hov.png);
+      }
+    }
   }
   .header__top {
     &-inner {
