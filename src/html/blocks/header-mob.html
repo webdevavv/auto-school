@@ -206,32 +206,34 @@
           </a>
         </span>
       </div>
-      <ul class="header__nav-list">
-        <li class="dropdown">
-          <a href="#">Услуги</a>
-          <ul>
-            <li><a href="#">Страница №1</a></li>
-            <li><a href="#">Страница №2</a></li>
-            <li><a href="#">Страница №3</a></li>
-            <li><a href="#">Страница №4</a></li>
-          </ul>
-        </li>
+      <ul class="header__nav-list" id="main-list">
+        <li class="dropdown" data-menu="services-list">Услуги</li>
         <li><a href="#">Организациям</a></li>
-        <li class="dropdown">
-          <a href="#">Учащимся</a>
-          <ul>
-            <li><a href="#">Страница №1</a></li>
-            <li><a href="#">Страница №2</a></li>
-            <li><a href="#">Страница №3</a></li>
-            <li><a href="#">Страница №4</a></li>
-          </ul>
-        </li>
+        <li class="dropdown" data-menu="services-list">Учащимся</li>
         <li><a href="#">Акции</a></li>
         <li><a href="#">Инструкторы</a></li>
         <li><a href="#">Фотогалерея</a></li>
         <li><a href="#">Расписание</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="header__nav-list hide" id="services-list">
+        <li class="back-dropdown" data-menu="main-list">Услуги</li>
+        <li class="dropdown" data-menu="auto-list">Автомобили и мотоциклы</li>
+        <li class="dropdown">Спецтехника</li>
+        <li class="dropdown">Маломерные суда</li>
+        <li class="dropdown">Дополнительное образование</li>
+      </ul>
+      <ul class="header__nav-list hide" id="auto-list">
+        <li class="back-dropdown" data-menu="services-list">
+          Автомобили и мотоциклы
+        </li>
+        <li><a href="#">А (мотоциклы)</a></li>
+        <li><a href="#">B (легковые автомобили)</a></li>
+        <li><a href="#">С (грузовые автомобили)</a></li>
+        <li><a href="#">D (автобусы)</a></li>
+        <li><a href="#">Прицепы</a></li>
+        <li><a href="#">Переподготовка</a></li>
       </ul>
       <div class="link send_feedback">
         <a href="#">Написать отзыв</a>

@@ -300,27 +300,32 @@
           }
         }
 
-        ul {
+        &-block {
           display: none;
           position: absolute;
+          align-items: flex-end;
           top: 66px;
           left: 0;
-          flex-direction: column;
-          align-items: flex-start;
-          min-width: 200px;
-          max-width: 400px;
           border-radius: 0px 0px 15px 15px;
-          background: rgb(45, 50, 75);
+          background: rgba(33, 36, 57, 1);
           padding: 20px 15px;
           margin-left: -15px;
           z-index: 99;
-          > li {
+          ul {
+            padding: 0 30px;
+            border-right: 1px solid rgba(45, 50, 75, 1);
+            &:nth-last-child(1) {
+              border-right: none;
+            }
+          }
+          &__title {
+            white-space: nowrap;
+            color: #fff !important;
+            margin-bottom: 25px;
+          }
+          li {
             width: 100%;
             display: block;
-            border-bottom: 1px solid #202439;
-            &:nth-last-child(1) {
-              border-bottom: 0;
-            }
             &:hover {
               a {
                 color: var(--accent);
@@ -332,7 +337,7 @@
               display: block;
               padding: 10px 0;
               font-size: 14px;
-              font-weight: 400;
+              font-weight: 300;
               line-height: 20px;
               letter-spacing: 0%;
               text-align: left;
@@ -341,7 +346,7 @@
           }
         }
         &:hover {
-          ul {
+          .dropdown-block {
             display: flex;
           }
         }
@@ -522,9 +527,12 @@
           gap: 10px;
         }
       }
+      .hide {
+        display: none !important;
+      }
       .header__nav-list {
         padding: 0;
-        margin: 0;
+        margin: 10px 0;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -536,64 +544,59 @@
             line-height: 18.38px;
           }
         }
-        .dropdown {
-          > a {
-            position: relative;
-            padding-right: 22px;
-            transition: color var(--time);
-            display: block;
-            width: 100%;
-            &::after {
-              content: url("data:image/svg+xml,%3Csvg width='12.000000' height='12.000000' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip877_23519'%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='%23FFFFFF' fill-opacity='0'/%3E%3Cg clip-path='url(%23clip877_23519)'%3E%3Cpath id='Down_Arrow_3_' d='M6 8.25C5.90625 8.25 5.80469 8.21338 5.73438 8.14014L1.98438 4.39014C1.83594 4.24365 1.83594 4.00635 1.98438 3.85986C2.13281 3.7135 2.36719 3.71338 2.51562 3.85986L6 7.34473L9.48438 3.85986C9.63281 3.71338 9.86719 3.71338 10.0156 3.85986C10.1641 4.00647 10.1641 4.24365 10.0156 4.39014L6.26562 8.14014C6.19531 8.21338 6.09375 8.25 6 8.25Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
-              position: absolute;
-              right: 0;
-              top: 2px;
-            }
-          }
-
-          ul {
-            display: none;
+        .back-dropdown {
+          position: relative;
+          padding-bottom: 16px;
+          padding-left: 32px;
+          display: flex;
+          transition: color var(--time);
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          color: #fff;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18.38px;
+          &:before {
+            content: "";
             position: absolute;
-            top: 66px;
+            bottom: 0;
+            left: -15px;
+            width: calc(100% + 30px);
+            background-color: rgba(51, 59, 98, 1);
+            height: 1px;
+          }
+          &::after {
+            content: url("data:image/svg+xml,%3Csvg width='12.000000' height='12.000000' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip877_23519'%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='%23FFFFFF' fill-opacity='0'/%3E%3Cg clip-path='url(%23clip877_23519)'%3E%3Cpath id='Down_Arrow_3_' d='M6 8.25C5.90625 8.25 5.80469 8.21338 5.73438 8.14014L1.98438 4.39014C1.83594 4.24365 1.83594 4.00635 1.98438 3.85986C2.13281 3.7135 2.36719 3.71338 2.51562 3.85986L6 7.34473L9.48438 3.85986C9.63281 3.71338 9.86719 3.71338 10.0156 3.85986C10.1641 4.00647 10.1641 4.24365 10.0156 4.39014L6.26562 8.14014C6.19531 8.21338 6.09375 8.25 6 8.25Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+            position: absolute;
             left: 0;
-            flex-direction: column;
-            align-items: flex-start;
-            min-width: 200px;
-            max-width: 400px;
-            border-radius: 0px 0px 15px 15px;
-            background: rgb(45, 50, 75);
-            padding: 20px 15px;
-            margin-left: -15px;
-            z-index: 9;
-            > li {
-              width: 100%;
-              display: block;
-              border-bottom: 1px solid #202439;
-              &:nth-last-child(1) {
-                border-bottom: 0;
-              }
-              &:active {
-                a {
-                  color: var(--accent);
-                }
-              }
-              a {
-                transition: color var(--time);
-                display: block;
-                padding: 10px 0;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 20px;
-                letter-spacing: 0%;
-                text-align: left;
-                color: #fff;
-              }
-            }
+            top: 2px;
+            rotate: 90deg;
+          }
+        }
+        .dropdown {
+          position: relative;
+          padding-right: 22px;
+          transition: color var(--time);
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          color: #fff;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18.38px;
+          &::after {
+            content: url("data:image/svg+xml,%3Csvg width='12.000000' height='12.000000' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip877_23519'%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3C/defs%3E%3Crect id='down-arrow (15) 2' width='12.000000' height='12.000000' fill='%23FFFFFF' fill-opacity='0'/%3E%3Cg clip-path='url(%23clip877_23519)'%3E%3Cpath id='Down_Arrow_3_' d='M6 8.25C5.90625 8.25 5.80469 8.21338 5.73438 8.14014L1.98438 4.39014C1.83594 4.24365 1.83594 4.00635 1.98438 3.85986C2.13281 3.7135 2.36719 3.71338 2.51562 3.85986L6 7.34473L9.48438 3.85986C9.63281 3.71338 9.86719 3.71338 10.0156 3.85986C10.1641 4.00647 10.1641 4.24365 10.0156 4.39014L6.26562 8.14014C6.19531 8.21338 6.09375 8.25 6 8.25Z' fill='%23FFFFFF' fill-opacity='1.000000' fill-rule='nonzero'/%3E%3C/g%3E%3C/svg%3E%0A");
+            position: absolute;
+            right: 0;
+            top: 2px;
+            rotate: -90deg;
           }
         }
       }
       .send_feedback {
         a {
+          color: var(--accent);
           padding-left: 22px;
           position: relative;
           &::before {

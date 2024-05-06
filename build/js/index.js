@@ -233,3 +233,28 @@ setTimeout(() => {
 regionConfirmsButton.addEventListener("click", () => {
   regionConfirms.classList.remove("region-confirm-show");
 });
+
+const headerNav = document.querySelectorAll(".header__nav-list");
+const dropdownBtn = document.querySelectorAll(".dropdown");
+const backBtn = document.querySelectorAll(".back-dropdown");
+
+dropdownBtn.forEach((item) => {
+  item.addEventListener("click", (el) => {
+    headerNav.forEach((element) => {
+      element.classList.add("hide");
+    });
+
+    let openList = el.target.getAttribute("data-menu");
+    document.getElementById(openList).classList.remove("hide");
+  });
+});
+backBtn.forEach((item) => {
+  item.addEventListener("click", (el) => {
+    headerNav.forEach((element) => {
+      element.classList.add("hide");
+    });
+
+    let openList = el.target.getAttribute("data-menu");
+    document.getElementById(openList).classList.remove("hide");
+  });
+});
