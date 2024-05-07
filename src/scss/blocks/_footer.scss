@@ -189,6 +189,9 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      a {
+        color: var(--accent);
+      }
       @include vp-768 {
         display: none;
       }
@@ -197,6 +200,11 @@
       display: flex;
       align-items: center;
       gap: 50px;
+      .link {
+        a {
+          color: var(--accent);
+        }
+      }
       @include vp-768 {
         width: 100%;
         flex-direction: column;
