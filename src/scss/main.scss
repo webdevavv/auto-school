@@ -623,13 +623,13 @@ h2 {
   }
 }
 .turquoise {
-  background: #ebf8f7;
+  background: #ebf8f7 !important;
 }
 .blue {
-  background: #ceebff;
+  background: #ceebff !important;
 }
 .purple {
-  background: #ced9ff;
+  background: #ced9ff !important;
 }
 .cost__grid {
   position: relative;
@@ -643,6 +643,7 @@ h2 {
     display: none;
   }
   .item {
+    background-color: rgba(244, 244, 244, 1);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -672,19 +673,22 @@ h2 {
       margin-left: -16px;
     }
     .subtitle {
+      text-align: center;
       display: block;
-      font-size: 17px;
+      margin-bottom: 14px;
+      font-size: 15px;
       font-weight: 400;
       line-height: 20px;
       letter-spacing: 0%;
-      color: var(--title-color);
+      color: rgba(150, 150, 150, 1);
     }
     .text {
-      font-size: 13px;
+      text-align: center;
+      font-size: 15px;
       font-weight: 300;
       line-height: 15px;
       letter-spacing: 0%;
-      color: var(--title-color);
+      color: #000;
     }
     h4 {
       text-align: center;
@@ -751,6 +755,12 @@ h2 {
       gap: 10px;
     }
     .more_info {
+      &__subtitle {
+        text-align: left;
+        font-size: 17px;
+        font-weight: 400;
+        color: rgba(32, 36, 57, 1);
+      }
       ol {
         margin-top: 15px;
         counter-reset: myCounter;
@@ -791,6 +801,36 @@ h2 {
       text-align: center;
       padding: 14.5px 0;
       font-size: 14px;
+    }
+  }
+  .old-view {
+    .price {
+      .subtitle {
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      .price-number {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 10px;
+        .discount-price {
+          color: var(--accent);
+          font-size: 30px;
+          font-weight: 500;
+        }
+        .old-price {
+          color: rgba(32, 36, 57, 1);
+          font-size: 13px;
+          font-weight: 300;
+        }
+      }
+      .custom_select {
+        .text {
+          text-align: left;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
@@ -1025,6 +1065,11 @@ h2 {
   }
   @include vp-840 {
     display: flex;
+  }
+}
+.cost__mob-old {
+  .item {
+    flex-direction: row;
   }
 }
 
@@ -1841,39 +1886,52 @@ h2 {
       .name {
         display: block;
         max-width: 180px;
+        margin-bottom: 20px;
         font-size: 17px;
         font-weight: 500;
         line-height: 20px;
         color: #000;
       }
-      .location {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-top: 5px;
-        span {
-          font-size: 13px;
-          font-weight: 400;
-          line-height: 15px;
-          color: #2a2a2a;
-        }
-      }
       .category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         &__title {
-          font-size: 13px;
+          font-size: 16px;
           font-weight: 500;
-          line-height: 15px;
-          color: #000;
+          line-height: 18px;
+          color: rgba(204, 204, 204, 1);
         }
         div {
           display: flex;
           gap: 5px;
           span {
-            font-size: 12px;
-            font-weight: 300;
+            font-size: 14px;
+            font-weight: 500;
             line-height: 14px;
-            color: #000;
+            color: var(--accent);
+            background-color: rgba(230, 240, 252, 1);
+            border-radius: 5px;
+            padding: 8px 10px;
           }
+        }
+      }
+      .expir {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          color: rgba(204, 204, 204, 1);
+        }
+        div {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          color: rgba(32, 36, 57, 1);
         }
       }
     }
@@ -3179,27 +3237,55 @@ h2 {
         overflow: hidden;
       }
       .name {
+        display: block;
+        max-width: 250px;
+        margin-bottom: 20px;
         font-size: 17px;
         font-weight: 500;
         line-height: 20px;
         color: #000;
-        display: block;
-        margin-bottom: 10px;
       }
-      .categoryes {
+      .category {
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
         align-items: center;
-        margin-bottom: 10px;
-        span {
-          font-size: 13px;
-          font-weight: 400;
-          line-height: 15px;
-          color: #2a2a2a;
+        &__title {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          color: rgba(204, 204, 204, 1);
+        }
+        div {
+          display: flex;
+          gap: 5px;
+          span {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            color: var(--accent);
+            background-color: rgba(230, 240, 252, 1);
+            border-radius: 5px;
+            padding: 8px 10px;
+          }
         }
       }
-      .card-button {
-        max-width: 188px;
+      .expir {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          color: rgba(204, 204, 204, 1);
+        }
+        div {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 18px;
+          color: rgba(32, 36, 57, 1);
+        }
       }
     }
   }
