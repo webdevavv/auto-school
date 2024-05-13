@@ -311,6 +311,12 @@
           padding: 20px 15px;
           margin-left: -15px;
           z-index: 99;
+          max-width: 1024px;
+          overflow-x: auto;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none;
+          }
           ul {
             padding: 0 30px;
             border-right: 1px solid rgba(45, 50, 75, 1);

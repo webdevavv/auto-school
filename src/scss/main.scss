@@ -2037,6 +2037,10 @@ h2 {
     max-width: 1380px;
     width: 100%;
     overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .active {
       background-color: var(--yellow);
       &:hover {
@@ -2978,6 +2982,10 @@ h2 {
     max-width: 1200px;
     width: 100%;
     overflow-x: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .active {
       background-color: var(--yellow);
       &:hover {
